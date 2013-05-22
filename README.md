@@ -6,4 +6,6 @@
 
 # TO-DO
 - add blog posts category & layout
-- set permalinks separately for blog posts & projects
+- set blog permalinks only to use /:categories/:year-:month-:day/:title.html
+- pretty permalinks (remove file extentions from urls)
+- category pagination
