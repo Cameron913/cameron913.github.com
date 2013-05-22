@@ -1,0 +1,33 @@
+body {
+  font-size: 100%;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  background: black;
+  color: #ececec;
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: #ccc;
+  text-decoration: none;
+}
+a:hover {
+  color: #ececec;
+  text-decoration: underline;
+}
+
+#main {
+  width: 960px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.4);
+}
+header {
+  padding: 0 10px;
+  overflow: hidden;
+}
+.content {
+  padding: 10px;
+}
+footer {
+  font-size: 0.7em;
+  text-align: center;
+}

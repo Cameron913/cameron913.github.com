@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title> {{ page.title }} {% if page.title %} | {% endif %} Cameron Garrett </title>
+	<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+	<div id="main">
+
+		<header>
+			<h1>Cameron Garrett</h1>
+		</header>
+
+		<nav role="navigation">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/projects/">Projects</a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/contact">Contact</a></li>
+			</ul>
+		</nav>
+
+{{ content }}
+
+		<footer>
+			<p>&#0169; Cameron Garrett {{ 'now' | date: "%Y "}} | All Rights Reserved</p>
+		</footer>
+
+	</div>
+</body>
+</html>
