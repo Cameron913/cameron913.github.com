@@ -1,8 +1,8 @@
-NOTES
+# NOTES
 - my brand new shiny github-hosted page
 
-RESOURCES
+# RESOURCES
 -
 
-TO-DO
+# TO-DO
 -
