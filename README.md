@@ -5,4 +5,5 @@
 -
 
 # TO-DO
--
+- add blog posts category & layout
+- set permalinks separately for blog posts & projects
