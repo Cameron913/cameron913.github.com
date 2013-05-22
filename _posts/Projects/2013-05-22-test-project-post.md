@@ -1,5 +1,5 @@
 ---
-layout: projects_entry
+layout: project_entry
 image: /#
 title: This Is A Project Entry
 category: projects
