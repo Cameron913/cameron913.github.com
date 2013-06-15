@@ -1,6 +1,6 @@
 ---
 layout: blog_entry
-image: /#
+image: http://placekitten.com/600/260
 title: This Is A Blog Entry
 category: blog
 ---

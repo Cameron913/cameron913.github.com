@@ -3,28 +3,48 @@
 <head>
 	<meta charset="utf-8" />
 	<title> {{ page.title }} {% if page.title %} | {% endif %} Cameron Garrett </title>
-	<link rel="stylesheet" href="/css/style.css" />
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="/css/style.css" />
+	<!-- TYPEKIT -->
+	<script type="text/javascript" src="//use.typekit.net/qit4das.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 <body>
 
 	<div id="main">
 
-		<header>
+		<header class="logo">
 			<h1><a href="/">Cameron Garrett</a></h1>
 		</header>
 
-		<nav role="navigation">
+		<nav role="navigation" class="clearfix">
 			<ul>
-				<li><a href="/projects/">Projects</a></li>
-				<li><a href="/blog/">Blog</a></li>
-				<li><a href="/about/">About</a></li>
+				<li><a href="/work/" class="h4">Work</a></li>
+				<li><a href="/blog/" class="h4">Blog</a></li>
+				<li><a href="/about/" class="h4">About</a></li>
 			</ul>
 		</nav>
 
 {{ content }}
 
 		<footer>
-			<p>&#0169; Cameron Garrett {{ 'now' | date: "%Y "}}</p>
+			<section>
+				<h1 class="h4">Contact</h1>
+				<address>
+					<ul>
+						<li>Cameron Garrett</li>
+						<li><a href="mailto:hello@camerongarrett.com">Email</a></li>
+						<li><a href="https://github.com/Cameron913">GitHub</a></li>
+					</ul>
+				</address>
+			</section>
+			<section>
+				<h1 class="h4">Colophon</h1>
+				<p>Designed and built with Jekyll in sunny Chicago, IL with the trusty SublimeText 2. Typeset in Brandon Grotesque & Museo Sans, served by TypeKit.</p>
+				<p>More info about how this site is set up can be found on the <a href="/about/">about page</a>.</p>
+				<p>&#0169; Cameron Garrett {{ 'now' | date: "%Y "}}</p>
+			</section>
 		</footer>
 
 	</div>

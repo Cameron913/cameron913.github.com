@@ -1,33 +1,134 @@
+/* GENERAL */
+* {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
 body {
-  font-size: 100%;
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  background: black;
-  color: #ececec;
+  font-family: "museo-sans", sans-serif;
+  background-color: #fcfcfc;
+  color: #666;
   padding: 0;
   margin: 0;
+  min-width: 320px;
+  overflow-x: hidden; /* keep wide images from scrolling page hirizontally? */
+  line-height: 1.5;
+  font-size: 100%;
+  font-size: 1.2em;
+  font-weight: 300;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  font-smooth:            antialiased;
 }
+#main { /* contain column */
+  width: 95%;
+  width: calc(100% - 20px);
+  min-width: 300px; /* 320 (iphone portrait width) - 10 per side */
+  max-width: 600px;
+  margin: 0 auto;
+}
+.content {}
+.entries {}
+.work {}
+.blog {}
+/* HEADERS */
+header {}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: "brandon-grotesque", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ccc;
+  margin: 0.8em 0px;
+}
+h1, .h1 {
+  font-size: 2em;
+  font-weight: 400;
+  line-height: 1.35em;
+}
+h2, .h2 {
+  font-size: 1.6em;
+  font-weight: 500;
+}
+h3, .h3 {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+h4, .h4 {
+  font-size: 1.1em;
+}
+h5, .h5 {
+  font-style: 0.9em;
+}
+/* LINKS */
 a {
   color: #ccc;
   text-decoration: none;
 }
 a:hover {
-  color: #ececec;
+  color: #bbb;
   text-decoration: underline;
 }
-
-#main {
-  width: 960px;
-  margin: 0 auto;
-  background: rgba(255, 255, 255, 0.4);
+/* LISTS */
+ul {
+  padding: 0px;
+  margin: 0px;
 }
-header {
-  padding: 0 10px;
-  overflow: hidden;
+li {
+  list-style: none;
 }
-.content {
-  padding: 10px;
+/* LOGO */
+header.logo {
+  padding: 15px 0px 20px;
+  border-top: 20px solid #ddd;
 }
-footer {
-  font-size: 0.7em;
+header.logo h1 {
+  line-height: .9em;
+  margin: 0px;
+  font-weight: 700;
+}
+header.logo a:hover {
+  text-decoration: none;
+}
+/* NAV */
+nav {}
+nav ul {
   text-align: center;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+  float: left;
+  width: 33.33%;
+}
+nav a.h4 {
+  display: block;
+  margin: 0px;
+}
+/* MISC */
+address {
+  font-style: normal;
+}
+time {
+  display: block;
+}
+img {
+  margin: 0px auto;
+  width: 100%;
+  height: auto;
+}
+/* FOOTER */
+footer {
+  border-top: 20px solid #ddd;
+}
+/* MIXINS */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
 }
