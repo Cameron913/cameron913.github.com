@@ -4,6 +4,9 @@
   -webkit-box-sizing: border-box;
   box-sizing:         border-box;
 }
+html {
+  overflow-x: hidden; /* keep wide images from scrolling page hirizontally? */
+}
 body {
   font-family: "museo-sans", sans-serif;
   background-color: #fdfdfd;
