@@ -21,6 +21,8 @@
 - LiveReload - http://stackoverflow.com/questions/13621568/sass-and-jekyll-integration
 - transition: in-out - http://roybarber.com/
 - full width images - http://daneden.me/portfolio/ - http://css-tricks.com/snippets/css/absolute-center-vertical-horizontal-an-image/
+- fix lists on small screens
+- add cloudflare support http://www.cloudflare.com/
 
 # IDEAS
 - implement paper.js into site - http://paperjs.org/examples/future-splash/
