@@ -3,6 +3,7 @@ layout: blog_entry
 image: http://placekitten.com/600/260
 title: Here Is A Test Of Markdown Styling
 category: blog
+published: false
 ---
 Markdown: Syntax
 ================

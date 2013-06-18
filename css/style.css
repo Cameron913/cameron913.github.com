@@ -1,4 +1,4 @@
-/* FONT-FACE */
+/* FONT FACE */
 @font-face {
   font-family: "entypo";
   src: url('font/entypo.eot?') format('eot'),
@@ -25,6 +25,7 @@
 }
 html {
   overflow-x: hidden; /* keep wide images from scrolling page horizontally? */
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 body {
   font-family: "museo-sans", sans-serif;
@@ -41,6 +42,7 @@ body {
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   font-smooth:            antialiased;
+  font-smoothing:         antialiased;
 }
 #main { /* contain column */
   width: 95%;
