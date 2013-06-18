@@ -49,15 +49,29 @@ body {
   max-width: 600px;
   margin: 0 auto;
 }
-.content {}
-.entries {}
 .work {}
 .blog {}
+.content {}
+.entries {}
+.entries li {
+  list-style: none;
+  margin-bottom: 30px;
+}
+article {
+  margin-bottom: 25px;
+}
+.title, time {
+  margin: 0px;
+}
 /* HEADERS */
-header {
+header, .header {
   text-align: center;
 }
-article header h1 {
+article header {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.title {
   display: inline-block;
 }
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
@@ -66,6 +80,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   text-transform: uppercase;
   text-align: center;
   color: #ccc;
+}
+h1, h2, h3, h4, h5, h6 {
   margin: 0.8em 0px;
 }
 h1, .h1 {
@@ -92,8 +108,10 @@ a {
   color: #ccc;
   text-decoration: none;
 }
-a:hover {
+a:hover, a:hover .title {
   color: #bbb;
+}
+p a:hover {
   text-decoration: underline;
 }
 /* LISTS */
@@ -114,9 +132,6 @@ header.logo h1 {
   margin: 0px;
   font-weight: 700;
 }
-header.logo a:hover {
-  text-decoration: none;
-}
 /* NAV */
 nav {}
 nav ul {
@@ -130,7 +145,7 @@ nav li {
   float: left;
   width: 33.33%;
 }
-nav a.h4 { /* check what this is for */
+nav a.h4 { /*top nav */
   display: block;
   margin: 0px;
 }
@@ -139,34 +154,40 @@ address {
   font-style: normal;
 }
 time {
-  display: block;
+  display: inline-block;
 }
 img {
   margin: 0px auto;
   width: 100%;
   height: auto;
 }
+.entries img {
+  display: block;
+  margin-bottom: 20px;
+}
 /* ICONS */
 .icon {
   display: inline-block;
+  color: #ccc;
   font-family: "entypo", "entypo-social";
   line-height: 0em;
   font-style: normal;
   position: relative;
   top: -0.16em;
 }
-.icon:hover {
-  text-decoration: none;
-}
-article header a.icon {
+.entries-work .icon, .work header .icon {
   font-size: 3.5em;
 }
-footer i.icon {
+.entries-blog .icon, .blog header .icon {
+  font-size: 2em;
+}
+footer .icon {
   font-size: 2em;
 }
 /* FOOTER */
 footer {
   border-top: 10px solid #ddd;
+  padding-bottom: 10px;
 }
 footer:before, footer:after { /* full width */
   border-top: 10px solid #ddd;
@@ -205,4 +226,12 @@ footer li a:hover {
 }
 .full-width:after {
   left: 100%;
+}
+/* MEDIA QUERIES */
+@media only screen
+and (min-width : 550px) {
+  footer section {
+    width: 50%;
+    float: left;
+  }
 }

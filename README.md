@@ -22,7 +22,9 @@
 - transition: in-out - http://roybarber.com/
 - full width images - http://daneden.me/portfolio/ - http://css-tricks.com/snippets/css/absolute-center-vertical-horizontal-an-image/
 - fix lists on small screens
+- put github links on work screen
 - add cloudflare support http://www.cloudflare.com/
+- troubleshoot "&nbsp;" (non-breaking space) on octocats
 
 # IDEAS
 - implement paper.js into site - http://paperjs.org/examples/future-splash/
