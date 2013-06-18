@@ -1,6 +1,6 @@
 ---
 layout: work_entry
-image: http://placekitten.com/600/260
+image: /img/tiny-palette.png
 title: Tiny Palette
 category: work
 github: https://github.com/Cameron913/Tiny-Palette

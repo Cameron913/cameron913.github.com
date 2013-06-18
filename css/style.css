@@ -25,7 +25,7 @@
 }
 html {
   overflow-x: hidden; /* keep wide images from scrolling page horizontally? */
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004); /* font smoothing hack */
 }
 body {
   font-family: "museo-sans", sans-serif;
@@ -106,12 +106,14 @@ h5, .h5 {
   font-style: 0.9em;
 }
 /* LINKS */
-a {
-  color: #ccc;
+a, .title {
+  /* color: #ccc; */
+  color: #98a;
   text-decoration: none;
 }
-a:hover, a:hover .title {
-  color: #bbb;
+a:hover, a:hover .title, a:hover .icon {
+  /* color: #bbb; */
+  color: #99b;
 }
 p a:hover {
   text-decoration: underline;

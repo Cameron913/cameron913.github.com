@@ -18,13 +18,13 @@
 - Google anylytics
 - SASS (responsive boilerplate)
 - HAML
-- LiveReload - http://stackoverflow.com/questions/13621568/sass-and-jekyll-integration
 - transition: in-out - http://roybarber.com/
 - full width images - http://daneden.me/portfolio/ - http://css-tricks.com/snippets/css/absolute-center-vertical-horizontal-an-image/
 - fix lists on small screens
-- put github links on work screen
 - add cloudflare support http://www.cloudflare.com/
 - troubleshoot "&nbsp;" (non-breaking space) on octocats
+- recompose icon and link :hover & :active colors
+- fix icon vertical-align (mainly Firefox, also Safari) - http://stackoverflow.com/questions/13477219/vertical-align-and-inline-block-behaving-annoyingly-different-in-chrome-and-fire
 
 # IDEAS
 - implement paper.js into site - http://paperjs.org/examples/future-splash/
