@@ -14,3 +14,5 @@ Tiny Palette is an itty bitty bookmarklet for keeping a palette of colors in loc
 5. Click on the hex color that shows up on hover to copy or change it.
 
 The code for Tiny Palette can be found on [GitHub](https://github.com/Cameron913/Tiny-Palette).
+
+Note: I just found a bug that prevents the dragging functionality from working in Firefox, currently working on a fix.
