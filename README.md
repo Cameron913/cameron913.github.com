@@ -33,3 +33,5 @@
 - HTML5 optimization - prefetchinghttp://daker.me/2013/05/5-html5-features-you-need-to-know.html
 - pin sidebar on scroll w/ position: fixed; top: px; on scroll - http://www.technologyreview.com/featuredstory/515926/how-technology-is-destroying-jobs/
 - theme: time of day: little animations, transitions, graphics depending on the time of day the site is visited, along with continous color palette shifts http://bobulate.com/post/1216102383/evening-edition
+- & change favicon re: https://status.github.com/
+- write bio copy with - http://99u.com/articles/7025/the-resume-is-dead-the-bio-is-king - http://99u.com/articles/7275/How-to-Get-Hired-When-You-Are-Just-Starting-Out
