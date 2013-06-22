@@ -25,6 +25,7 @@
 - troubleshoot "&nbsp;" (non-breaking space) on octocats
 - recompose icon and link :hover & :active colors
 - fix icon vertical-align (mainly Firefox, also Safari) - http://stackoverflow.com/questions/13477219/vertical-align-and-inline-block-behaving-annoyingly-different-in-chrome-and-fire
+- add HTML5 Boilerplate - https://github.com/h5bp/html5-boilerplate
 
 # IDEAS
 - implement paper.js into site - http://paperjs.org/examples/future-splash/
