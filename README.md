@@ -26,6 +26,7 @@
 - recompose icon and link :hover & :active colors
 - fix icon vertical-align (mainly Firefox, also Safari) - http://stackoverflow.com/questions/13477219/vertical-align-and-inline-block-behaving-annoyingly-different-in-chrome-and-fire
 - add HTML5 Boilerplate - https://github.com/h5bp/html5-boilerplate
+- create a git feature branch
 
 # IDEAS
 - implement paper.js into site - http://paperjs.org/examples/future-splash/
@@ -36,3 +37,4 @@
 - theme: time of day: little animations, transitions, graphics depending on the time of day the site is visited, along with continous color palette shifts http://bobulate.com/post/1216102383/evening-edition
 - & change favicon re: https://status.github.com/
 - write bio copy with - http://99u.com/articles/7025/the-resume-is-dead-the-bio-is-king - http://99u.com/articles/7275/How-to-Get-Hired-When-You-Are-Just-Starting-Out
+- add Olark
