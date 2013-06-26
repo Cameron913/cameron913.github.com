@@ -38,3 +38,5 @@
 - & change favicon re: https://status.github.com/
 - write bio copy with - http://99u.com/articles/7025/the-resume-is-dead-the-bio-is-king - http://99u.com/articles/7275/How-to-Get-Hired-When-You-Are-Just-Starting-Out
 - add Olark
+- animate favicon to say 'Hi' on load - http://www.p01.org/releases/DEFENDER_of_the_favicon/
+- change clock icon to calendar
