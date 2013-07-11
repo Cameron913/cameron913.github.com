@@ -12,6 +12,7 @@
 - install Jekyll Asset Pipeline - http://matthodan.com/2012/11/22/jekyll-asset-pipeline.html
 - implement Rakefile for Jekyll
 - generate sitemap
+- add 404 page
 - Google anylytics
 - SASS (responsive boilerplate)
 - HAML
