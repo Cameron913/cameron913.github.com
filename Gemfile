@@ -3,8 +3,6 @@
 
 source "https://rubygems.org"
 
-gem 'bundler'     '~>1.3.5'
-
 # GitHub Pages
 gem 'jekyll',     '=1.0.3'
 gem 'liquid',     '=2.5.0'
@@ -13,5 +11,6 @@ gem 'maruku',     '=0.6.1'
 gem 'rdiscount',  '=1.6.8'
 gem 'RedCloth',   '=4.2.9'
 
-# Plugins
+# Custom
 gem 'sass',       '~>3.2.9'
+gem 'bundler'     '~>1.3.5'
