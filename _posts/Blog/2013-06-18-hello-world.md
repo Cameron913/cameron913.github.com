@@ -1,6 +1,6 @@
 ---
 layout: blog_entry
-image: /img/blog/2013-06-18-hello-world.png
+image: /assets/img/blog/2013-06-18-hello-world.png
 title: Hello World
 category: blog
 ---

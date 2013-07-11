@@ -1,6 +1,6 @@
 ---
 layout: work_entry
-image: /img/work/2013-05-22-tiny-palette.png
+image: /assets/img/work/2013-05-22-tiny-palette.png
 title: Tiny Palette
 category: work
 github: https://github.com/Cameron913/Tiny-Palette
