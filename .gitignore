@@ -12,9 +12,9 @@ Thumbs.db
 # Folders #
 ######################
 /_site
-/resources
+/_resources
+/_deploy
 /.sass-cache
-/deploy
 
 # Files #
 ######################
