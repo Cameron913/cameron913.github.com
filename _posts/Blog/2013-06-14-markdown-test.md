@@ -1,7 +1,7 @@
 ---
-layout: blog_entry
-image: http://placekitten.com/600/260
 title: Here Is A Test Of Markdown Styling
+image: http://placekitten.com/600/260
+layout: blog_entry
 category: blog
 published: false
 ---

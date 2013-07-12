@@ -14,3 +14,4 @@ gem 'RedCloth',   '=4.2.9'
 # Custom
 gem 'sass',       '~>3.2.9'
 gem 'bundler'     '~>1.3.5'
+gem 'rake'        '~>0.8.7'

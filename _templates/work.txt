@@ -1,0 +1,8 @@
+---
+title:
+image:
+layout: work_entry
+category: work
+github:
+published: false
+---

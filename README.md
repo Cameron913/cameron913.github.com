@@ -13,13 +13,13 @@
 - implement Rakefile for Jekyll
 - generate sitemap
 - add 404 page
-- Google anylytics
+- Google anylytics + rich snippets - https://support.google.com/webmasters/answer/99170?hl=en
+- remove /assets/css/style.css from sitemap
 - SASS (responsive boilerplate)
-- HAML
 - transition: in-out - http://roybarber.com/
 - full width images - http://daneden.me/portfolio/ - http://css-tricks.com/snippets/css/absolute-center-vertical-horizontal-an-image/
 - fix lists on small screens
-- add cloudflare support http://www.cloudflare.com/
+- add cloudflare support http://www.cloudflare.com/ (move images off github)
 - troubleshoot "&nbsp;" (non-breaking space) on octocats
 - recompose icon and link :hover & :active colors
 - fix icon vertical-align (mainly Firefox, also Safari) - http://stackoverflow.com/questions/13477219/vertical-align-and-inline-block-behaving-annoyingly-different-in-chrome-and-fire

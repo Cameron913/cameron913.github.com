@@ -1,1 +1,13 @@
-permalink: /:categories/:year/:title.html
+# Jekyll
+permalink:       /:categories/:year/:title.html
+url:             http://camerongarrett.com
+exclude:         ['README.md']
+
+# Rakefile
+blog:
+  template:      _templates/blog.txt
+  extension:     md
+work:
+  template:      _templates/work.txt
+  extension:     md
+editor:          subl

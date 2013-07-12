@@ -10,6 +10,8 @@
 # Site: http://www.kinnetica.com
 # Distributed Under A Creative Commons License
 #   - http://creativecommons.org/licenses/by/3.0/
+#
+# fork : https://github.com/danielgroves/jekyll-plugins/blob/master/sitemap_generator.rb
 
 require 'rexml/document'
 
@@ -71,7 +73,7 @@ module Jekyll
 
     # Config defaults
     SITEMAP_FILE_NAME = "/sitemap.xml"
-    EXCLUDE = ["/atom.xml", "/feed.xml", "/feed/index.xml"]
+    EXCLUDE = ["/atom.xml", "/feed.xml", "/feed/index.xml", "/style.css"]
     INCLUDE_POSTS = ["/index.html"]
     CHANGE_FREQUENCY_NAME = "change_frequency"
     PRIORITY_NAME = "priority"

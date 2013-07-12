@@ -1,0 +1,7 @@
+---
+title:
+image:
+layout: blog_entry
+category: blog
+published: false
+---
