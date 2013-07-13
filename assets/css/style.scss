@@ -2,12 +2,14 @@
 ---
 
 /* SASS IMPORTS */
-@import "normalize";
-@import "fonts/fonts";
 @import "config";
-@import "dev";
+@import "normalize";
 @import "functions";
+
+@import "fonts/fonts";
+
 @import "shame";
+@import "dev";
 
 /* GENERAL */
 * {
