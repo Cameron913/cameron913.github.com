@@ -47,4 +47,6 @@ address {
 }
 footer {
   padding-bottom: 10px;
+  border-top: 10px solid #ddd;
+  @extend %clearfix;
 }
