@@ -2,16 +2,9 @@
 // MODULES - ALL
 // --------------------------------------------------------------- //
 
-.content {}
-.title {
-//  display: inline-block;
-}
-
-// LOGO (header)
+// LOGO - (main header)
 .logo {
-	// @extend %full-width;
   padding: 15px 0px 20px;
-
   h1 {
     line-height: .9em;
     margin: 0px;
@@ -19,10 +12,9 @@
   }
 }
 
-// NAV
-nav {
+// TOP NAV
+.top-nav {
 	@extend %clearfix;
-
 	ul {
 	  text-align: center;
 	  list-style: none;
@@ -34,17 +26,27 @@ nav {
 	  float: left;
 	  width: 33.33%;
 	}
-	a { /*top nav */
+	a { // top nav
 	  display: block;
 	  margin: 0px;
 	}
 }
 // highlight current nav section
-.work #work { color: red; }
-.blog #blog { color: red; }
-.about #about { color: red; }
+.work #work, .blog #blog, .about #about {
+  color: red;
+  border-bottom: 4px solid red;
+}
 
-// ICONS
+// ICONS  //  FIX THIS MESS !!!
+.icon {
+  display: inline-block;
+  color: $text-color;
+  font-family: "entypo", "entypo-social";
+  line-height: 0;
+  font-style: normal;
+  position: relative;
+  top: -0.16em;
+}
 .work .entries .icon, .work header .icon {
   font-size: 3.5em;
 }
@@ -55,37 +57,28 @@ footer .icon {
   font-size: 2em;
 }
 
-// ARTICLE
-article {
-  margin-bottom: 25px;
-
-  header {
-    margin-top: 30px;
-    margin-bottom: 20px;
-  }
-}
-
-// ENTRIES
+// ENTRIES - (work archive, blog archive)
 .entries {
   li {
-    list-style: none;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
   }
 	img {
-	  display: block;
-	  margin-bottom: 20px;
+	  // margin-bottom: 20px;
 	}
 }
 
-// FOOTER
-footer {
-	// @extend %full-width;
-  padding-bottom: 10px;
-
-  ul {
-    list-style: none;
+// CONTENT - (home, about, work entry, blog entry)
+.content {
+  ul, ol {
+    padding-left: 25px;
   }
-  li a:hover {
-    text-decoration: none;
+  ul li {
+    list-style: disc; // or circle
+  }
+  ol li {
+    list-style: decimal;
+  }
+  a:hover {
+    text-decoration: underline;
   }
 }

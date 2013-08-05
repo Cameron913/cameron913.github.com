@@ -2,7 +2,7 @@
 // LAYOUTS - ALL
 // --------------------------------------------------------------- //
 
-.wrap { // container wrap
+.wrap, .content { // container wrap
 	width: 95%;
 	width: calc(100% - 20px);
 	min-width: 300px; // 320 (iphone portrait width) - 10 per side
@@ -12,14 +12,22 @@
 	display: block;
 }
 
+.home {}
 .work {}
 .blog {}
+.about {}
 
 /* MEDIA QUERIES */
-@media only screen
-and (min-width : 550px) {
+@media only screen and (min-width : 550px) {
   footer section {
     width: 50%;
     float: left;
+  }
+}
+@media only screen and (min-width : 680px) {
+  .content {
+    ul, ol {
+      padding-left: 0px;
+    }
   }
 }

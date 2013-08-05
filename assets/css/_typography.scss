@@ -23,9 +23,9 @@ $base-line-height: 1.5;
 $header-font-family: "brandon-grotesque", sans-serif;
 // $header-font-weight: $bold;
 
-
+// MAIN
 html {
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.004); /* font smoothing hack */
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004); // font smoothing hack
 }
 body {
   font-family: $base-font-family;
@@ -40,31 +40,16 @@ body {
   font-smoothing:         antialiased;
 }
 
-.icon {
-  display: inline-block;
-  color: $text-color;
-  font-family: "entypo", "entypo-social";
-  line-height: 0;
-  font-style: normal;
-  position: relative;
-  top: -0.16em;
-}
-
-/* HEADERS */
+// HEADERS
 header {
   text-align: center;
 }
-
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: $header-font-family;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   color: $text-color;
-}
-h1, h2, h3, h4, h5, h6 {
-  margin: 0.8em 0;
-  display: inline-block;
 }
 h1, .h1 {
   font-size: 2em;
@@ -86,19 +71,12 @@ h5, .h5 {
   font-style: 0.9em;
 }
 
-/* LINKS */
-a, .title {
+// LINKS
+a {
   color: $brand-color;
   text-decoration: none;
 }
-a:hover, a:hover .title, a:hover .icon {
+a:hover, a:hover .icon {
   color: $brand-color-dark;
-}
-p a:hover {
-  text-decoration: underline;
-}
-
-address {
-  font-style: normal;
 }
 

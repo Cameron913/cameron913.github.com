@@ -7,8 +7,8 @@ label: work
 	{% for post in site.categories.work %}
 
 	<li>
-		<header>
-			<h1 class="title">
+		<header class="wrap">
+			<h1>
 				<a href="{{ post.url }}">{{ post.title }}</a>
 			</h1>&nbsp;{% if post.github %}<a href="{{ post.github }}" target="_blank" class="icon">&#62208;</a>{% endif %}
 		</header>

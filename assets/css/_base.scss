@@ -9,21 +9,23 @@
   -webkit-box-sizing: border-box;
   box-sizing:         border-box;
 }
-html, body {
-  overflow-x: hidden; /* keep full width from scrolling page horizontally? */
-}
 body {
   padding: 0;
   margin: 0;
   min-width: 320px;
   background-color: $background-color;
 }
-
-.title {
-  margin: 0px;
+header {
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
-
-p {}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  margin: 0.8em 0;
+  display: inline-block;
+}
+article {
+  margin-bottom: 25px;
+}
 time {
 	margin: 0px;
 }
@@ -31,7 +33,18 @@ img {
   margin: 0px auto;
   width: 100%;
   height: auto;
+  display: block;
 }
 ul, ol {
   padding: 0px;
+}
+li {
+  list-style: none;
+}
+p {}
+address {
+  font-style: normal;
+}
+footer {
+  padding-bottom: 10px;
 }
