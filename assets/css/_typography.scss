@@ -1,0 +1,105 @@
+// --------------------------------------------------------------- //
+// TYPOGRAPHY
+// - take care of global typographic styles
+// --------------------------------------------------------------- //
+
+// Font weights
+// $light: 100;
+// $regular: 400;
+// $bold: 600;
+
+// Base Font
+$base-font-family: "museo-sans", sans-serif;
+// $base-font-weight: $regular;
+$base-font-size: 1.2em;
+$base-line-height: 1.5;
+
+// Fixed Font
+// $fixed-font-family: monospace;
+// $fixed-font-size: 85%;
+// $fixed-line-height: $base-line-height;
+
+// Headings
+$header-font-family: "brandon-grotesque", sans-serif;
+// $header-font-weight: $bold;
+
+
+html {
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004); /* font smoothing hack */
+}
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: 300;
+  line-height: $base-line-height;
+  color: $text-color-darker;
+
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  font-smooth:            antialiased;
+  font-smoothing:         antialiased;
+}
+
+.icon {
+  display: inline-block;
+  color: $text-color;
+  font-family: "entypo", "entypo-social";
+  line-height: 0;
+  font-style: normal;
+  position: relative;
+  top: -0.16em;
+}
+
+/* HEADERS */
+header {
+  text-align: center;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: $header-font-family;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: $text-color;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0.8em 0;
+  display: inline-block;
+}
+h1, .h1 {
+  font-size: 2em;
+  font-weight: 400;
+  line-height: 1.35em;
+}
+h2, .h2 {
+  font-size: 1.6em;
+  font-weight: 500;
+}
+h3, .h3 {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+h4, .h4 {
+  font-size: 1.1em;
+}
+h5, .h5 {
+  font-style: 0.9em;
+}
+
+/* LINKS */
+a, .title {
+  color: $brand-color;
+  text-decoration: none;
+}
+a:hover, a:hover .title, a:hover .icon {
+  color: $brand-color-dark;
+}
+p a:hover {
+  text-decoration: underline;
+}
+
+
+address {
+  font-style: normal;
+}
+

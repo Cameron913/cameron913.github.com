@@ -1,0 +1,43 @@
+// --------------------------------------------------------------- //
+// MIXINS
+// - mixins and styles for @extend only
+// --------------------------------------------------------------- //
+
+// @extend %clearfix;
+%clearfix {
+	zoom: 1;
+	&:before, &:after {
+		content: "\0020";
+		display: block;
+		height: 0;
+		overflow: hidden;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+// @extend %full-width
+%full-width {
+  position: relative;
+  border-top: 10px solid #ddd;
+
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 9999px;
+  }
+  &:before, &:after { /* full width */
+    border-top: 10px solid #ddd;
+    top: -10px;
+  }
+  &:before {
+    right: 100%;
+  }
+  &:after {
+    left: 100%;
+  }
+}
+
+// add functions / mixins with variables passed to them

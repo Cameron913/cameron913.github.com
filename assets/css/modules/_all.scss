@@ -1,0 +1,89 @@
+// --------------------------------------------------------------- //
+// MODULES - ALL
+// --------------------------------------------------------------- //
+
+.content {}
+.entries {}
+.entries li {
+  list-style: none;
+  margin-bottom: 30px;
+}
+.title {
+//  display: inline-block;
+}
+
+// LOGO (header)
+.logo {
+	@extend %full-width;
+  padding: 15px 0px 20px;
+
+  h1 {
+    line-height: .9em;
+    margin: 0px;
+    font-weight: 700;
+  }
+}
+
+// NAV
+nav {
+	@extend %clearfix;
+
+	ul {
+	  text-align: center;
+	  list-style: none;
+	  margin: 0px;
+	}
+	li {
+	  display: inline-block;
+	  list-style: none;
+	  float: left;
+	  width: 33.33%;
+	}
+	a { /*top nav */
+	  display: block;
+	  margin: 0px;
+	}
+}
+
+// ICONS
+
+.entries-work .icon, .work header .icon {
+  font-size: 3.5em;
+}
+.entries-blog .icon, .blog header .icon {
+  font-size: 2em;
+}
+footer .icon {
+  font-size: 2em;
+}
+
+// ARTICLE
+article {
+  margin-bottom: 25px;
+
+  header {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+// ENTRIES
+.entries {
+	img {
+	  display: block;
+	  margin-bottom: 20px;
+	}
+}
+
+// FOOTER
+footer {
+	@extend %full-width;
+  padding-bottom: 10px;
+
+  ul {
+    list-style: none;
+  }
+  li a:hover {
+    text-decoration: none;
+  }
+}

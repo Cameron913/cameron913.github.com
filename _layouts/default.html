@@ -9,16 +9,20 @@
 	<!-- TYPEKIT -->
 	<script type="text/javascript" src="//use.typekit.net/qit4das.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<!-- JS -->
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="/assets/js/html5shiv.js"></script>
+	<![endif]-->
 </head>
 <body>
 
-	<div id="main">
+	<div class="main">
 
-		<header class="logo full-width">
+		<header class="logo">
 			<h1><a href="/">Cameron Garrett</a></h1>
 		</header>
 
-		<nav role="navigation" class="clearfix">
+		<nav role="navigation">
 			<ul>
 				<li><a href="/work/" class="h4">Work</a></li>
 				<li><a href="/blog/" class="h4">Blog</a></li>
@@ -28,7 +32,7 @@
 
 {{ content }}
 
-		<footer class="full-width">
+		<footer>
 			<section>
 				<h1 class="h4">Contact</h1>
 				<address>

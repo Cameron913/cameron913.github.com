@@ -1,0 +1,24 @@
+// --------------------------------------------------------------- //
+// LAYOUTS - ALL
+// --------------------------------------------------------------- //
+
+.main { /* contain column */
+  width: 95%;
+  width: calc(100% - 20px);
+  min-width: 300px; /* 320 (iphone portrait width) - 10 per side */
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.work {}
+.blog {}
+
+
+/* MEDIA QUERIES */
+@media only screen
+and (min-width : 550px) {
+  footer section {
+    width: 50%;
+    float: left;
+  }
+}
