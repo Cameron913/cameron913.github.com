@@ -7,6 +7,7 @@
 
 # TO-DO
 - learn everything about Jekyll - https://learn.andrewmunsell.com/learn/jekyll-by-example/tutorial
+- fix sass-globbing gem
 - set blog permalinks only to use /:categories/:year-:month-:day/:title.html #apparentlyimpossible
 - pretty permalinks (remove file extentions from urls)
 - category pagination
