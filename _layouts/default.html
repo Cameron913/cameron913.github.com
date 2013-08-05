@@ -14,41 +14,39 @@
 		<script type="text/javascript" src="/assets/js/html5shiv.js"></script>
 	<![endif]-->
 </head>
-<body>
+<body class="{% if page.label %}{{ page.label }}{% else %}{{ page.categories }}{% endif %}">
 
-	<div class="main">
+	<header class="logo wrap">
+		<h1><a href="/">Cameron Garrett</a></h1>
+	</header>
 
-		<header class="logo wrap">
-			<h1><a href="/">Cameron Garrett</a></h1>
-		</header>
-
-		<nav role="navigation">
-			<ul>
-				<li><a href="/work/" class="h4">Work</a></li>
-				<li><a href="/blog/" class="h4">Blog</a></li>
-				<li><a href="/about/" class="h4">About</a></li>
-			</ul>
-		</nav>
+	<nav role="navigation" class="wrap">
+		<ul>
+			<li><a href="/work/" id="work" class="h4">Work</a></li>
+			<li><a href="/blog/" id="blog" class="h4">Blog</a></li>
+			<li><a href="/about/" id="about" class="h4">About</a></li>
+		</ul>
+	</nav>
 
 {{ content }}
 
-		<footer>
-			<section>
-				<h1 class="h4">Contact</h1>
-				<address>
-					<ul>
-						<li><a href="mailto:hello@camerongarrett.com"><i class="icon">&#128319;</i> Email</a></li>
-						<li><a href="https://github.com/Cameron913"><i class="icon">&#62208;</i> GitHub</a></li>
-						<li><a href="http://www.linkedin.com/in/cameron913"><i class="icon">&#62233;</i> LinkedIn</a></li>
-						<li><a href="https://twitter.com/cameron_913"><i class="icon">&#62217;</i> Twitter</a></li>
-					</ul>
-				</address>
-			</section>
-			<section>
-				<h1 class="h4">Colophon</h1>
-				<p>Designed and built with <a href="http://jekyllrb.com" target="_blank">Jekyll</a> in sunny Chicago, IL with the trusty <a href="http://www.sublimetext.com/2" target="_blank">SublimeText 2</a>. Typeset in <a href="http://www.typekit.com/fonts/brandon-grotesque" target="_blank">Brandon Grotesque</a> & <a href="http://www.typekit.com/fonts/museo-sans" target="_blank">Museo Sans</a>, served by <a href="http://www.typekit.com" target="_blank">TypeKit</a>. <a href="http://www.entypo.com" target="_blank">Entypo</a> pictograms by Daniel Bruce. More info about the site can be found on the <a href="/about/">about page</a>.</p>
-			</section>
-		</footer>
-	</div>
+	<footer class="wrap">
+		<section>
+			<h1 class="h4">Contact</h1>
+			<address>
+				<ul>
+					<li><a href="mailto:hello@camerongarrett.com"><i class="icon">&#128319;</i> Email</a></li>
+					<li><a href="https://github.com/Cameron913"><i class="icon">&#62208;</i> GitHub</a></li>
+					<li><a href="http://www.linkedin.com/in/cameron913"><i class="icon">&#62233;</i> LinkedIn</a></li>
+					<li><a href="https://twitter.com/cameron_913"><i class="icon">&#62217;</i> Twitter</a></li>
+				</ul>
+			</address>
+		</section>
+		<section>
+			<h1 class="h4">Colophon</h1>
+			<p>Designed and built with <a href="http://jekyllrb.com" target="_blank">Jekyll</a> in sunny Chicago, IL with the trusty <a href="http://www.sublimetext.com/2" target="_blank">SublimeText 2</a>. Typeset in <a href="http://www.typekit.com/fonts/brandon-grotesque" target="_blank">Brandon Grotesque</a> & <a href="http://www.typekit.com/fonts/museo-sans" target="_blank">Museo Sans</a>, served by <a href="http://www.typekit.com" target="_blank">TypeKit</a>. <a href="http://www.entypo.com" target="_blank">Entypo</a> pictograms by Daniel Bruce. More info about the site can be found on the <a href="/about/">about page</a>.</p>
+		</section>
+	</footer>
+
 </body>
 </html>

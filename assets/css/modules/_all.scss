@@ -3,11 +3,6 @@
 // --------------------------------------------------------------- //
 
 .content {}
-.entries {}
-.entries li {
-  list-style: none;
-  margin-bottom: 30px;
-}
 .title {
 //  display: inline-block;
 }
@@ -21,15 +16,12 @@
     line-height: .9em;
     margin: 0px;
     font-weight: 700;
-    a {
-      color: blue !important;
-    }
   }
 }
 
 // NAV
 nav {
-	// @extend %clearfix;
+	@extend %clearfix;
 
 	ul {
 	  text-align: center;
@@ -47,13 +39,16 @@ nav {
 	  margin: 0px;
 	}
 }
+// highlight current nav section
+.work #work { color: red; }
+.blog #blog { color: red; }
+.about #about { color: red; }
 
 // ICONS
-
-.entries-work .icon, .work header .icon {
+.work .entries .icon, .work header .icon {
   font-size: 3.5em;
 }
-.entries-blog .icon, .blog header .icon {
+.blog .entries .icon, .blog header .icon {
   font-size: 2em;
 }
 footer .icon {
@@ -72,6 +67,10 @@ article {
 
 // ENTRIES
 .entries {
+  li {
+    list-style: none;
+    margin-bottom: 30px;
+  }
 	img {
 	  display: block;
 	  margin-bottom: 20px;
