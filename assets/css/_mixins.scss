@@ -1,6 +1,6 @@
 // --------------------------------------------------------------- //
 // MIXINS
-// - mixins and styles for @extend only
+// - mixins for @extend, variables
 // --------------------------------------------------------------- //
 
 // @extend %clearfix;
@@ -17,27 +17,4 @@
 	}
 }
 
-// @extend %full-width // DEPRECATED - GET RID OF
-%full-width {
-  position: relative;
-  border-top: 10px solid #ddd;
-
-  &:before, &:after {
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    width: 9999px;
-  }
-  &:before, &:after { /* full width */
-    border-top: 10px solid #ddd;
-    top: -10px;
-  }
-  &:before {
-    right: 100%;
-  }
-  &:after {
-    left: 100%;
-  }
-}
-
-// add functions / mixins with variables passed to them
+$line-width: 4px;

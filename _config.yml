@@ -1,7 +1,7 @@
 # Jekyll
 permalink:       /:categories/:year/:title.html
 url:             http://camerongarrett.com
-exclude:         ['README.md', 'Gemfile', 'Rakefile', '_resources/']
+exclude:         ['README.md', 'Gemfile', 'Guardfile', 'Rakefile', '_resources/']
 
 # Rakefile
 blog:

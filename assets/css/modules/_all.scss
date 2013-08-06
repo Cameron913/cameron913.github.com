@@ -31,17 +31,16 @@
 	  margin: 0px;
 	}
 }
-// highlight current nav section
-.work #work, .blog #blog, .about #about {
-  color: red;
-  border-bottom: 4px solid red;
+.work #work, .blog #blog, .about #about { // highlight current nav section
+  color: $brand-color;
+  border-bottom: $line-width solid $brand-color;
 }
 
 // ICONS  //  FIX THIS MESS !!!
 .icon {
   display: inline-block;
   color: $text-color;
-  font-family: "entypo", "entypo-social";
+  font-family: $icon-font-family;
   line-height: 0;
   font-style: normal;
   position: relative;
@@ -79,6 +78,22 @@ footer .icon {
     list-style: decimal;
   }
   a:hover {
-    text-decoration: underline;
+    // text-decoration: underline;
+    padding-bottom: 1px;
+    border-bottom: 1px solid $brand-color;
+  }
+}
+
+// GIST
+.gist {
+  font-family: $fixed-font-family !important;
+  font-size: $fixed-font-size !important;
+  line-height: $fixed-line-height !important;
+  .gist-file * {
+    background: #fbfbfb !important;
+  }
+  .gist-meta {}
+  .readme {
+    padding: 0 0.5em;
   }
 }

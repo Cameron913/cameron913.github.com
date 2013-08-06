@@ -2,13 +2,13 @@
 layout: default
 ---
 <article>
-	<header>
+	<header class="wrap">
 		<h1>
 			<a href="{{ post.url }}">{{ page.title }}</a>
 		</h1>
 		{% if page.github %}<a href="{{ page.github }}" target="_blank" class="icon">&#62208;</a>{% endif %}
 	</header>
-	<img src="{{ page.image }}" />
+	{% if page.image %}<img src="{{ page.image }}" alt="{{ page.image_alt }}" />{% endif %}
 	<section class="content">
 		{{ content }}
 	</section>

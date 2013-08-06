@@ -1,6 +1,7 @@
 ---
 title: Hello World
 image: /assets/img/blog/2013-06-18-hello-world.png
+image_alt: trees
 layout: blog_entry
 category: blog
 ---

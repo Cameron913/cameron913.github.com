@@ -1,6 +1,7 @@
 ---
 title: Tiny Palette
 image: /assets/img/work/2013-05-22-tiny-palette.png
+image_alt: screenshot of TinyPalette color tool
 layout: work_entry
 category: work
 github: https://github.com/Cameron913/Tiny-Palette

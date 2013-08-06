@@ -16,11 +16,13 @@ body {
   background-color: $background-color;
 }
 header {
-  margin-top: 30px;
-  margin-bottom: 20px;
+  @extend %vertical-rythm-margins;
+  // margin-top: 30px;
+  // margin-bottom: 20px;
 }
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  margin: 0.8em 0;
+  // margin: 0.8em 0;
+  @extend %vertical-rythm-margins;
   display: inline-block;
 }
 article {
@@ -30,23 +32,36 @@ time {
 	margin: 0px;
 }
 img {
+  @extend %vertical-rythm-margins;
   margin: 0px auto;
   width: 100%;
   height: auto;
   display: block;
 }
 ul, ol {
+  @extend %vertical-rythm-margins;
   padding: 0px;
 }
 li {
   list-style: none;
 }
-p {}
 address {
+  @extend %vertical-rythm-margins;
   font-style: normal;
 }
+hr {
+  height: $line-width;
+  background-color: #ddd;
+  border: 0;
+}
 footer {
-  padding-bottom: 10px;
-  border-top: 10px solid #ddd;
   @extend %clearfix;
+  padding-bottom: 10px;
+  border-top: $line-width solid #ddd;
+}
+p {
+  @extend %vertical-rythm-margins;
+}
+blockquote {
+  @extend %vertical-rythm-margins;
 }
