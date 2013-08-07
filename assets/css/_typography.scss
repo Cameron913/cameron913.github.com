@@ -3,6 +3,9 @@
 // - take care of global typographic styles
 // --------------------------------------------------------------- //
 
+$doc-font-size: 16;
+$doc-line-height: 28;
+
 // Font weights
 // $light: 100;
 // $regular: 400;
@@ -10,30 +13,33 @@
 
 // Base Font
 $base-font-family: "museo-sans", sans-serif;
+$base-line-height: $doc-line-height +px;
 // $base-font-weight: $regular;
-$base-font-size: 18px;
-$base-line-height: 1.5em; // (27px)
 
 // Fixed Font
 $fixed-font-family: monaco, monospace;
-// $fixed-font-weight: $regular;
-$fixed-font-size: 0.9em;
 $fixed-line-height: $base-line-height;
+$fixed-font-size: 14;
+// $fixed-font-weight: $regular;
 
 // Headings
 $header-font-family: "brandon-grotesque", sans-serif;
-// $header-font-weight: $bold;
-$header-font-size: 1.1em;
-$header-line-height: $base-line-height;
 
 // ICONS
 $icon-font-family: "entypo", "entypo-social";
 
+
 // MIXINS
 // @extend %vertical-rythm-margins
 %vertical-rythm-margins {
-  margin-top: $base-line-height;
-  margin-bottom: $base-line-height;
+  margin-top: 0px;
+  margin-bottom: $doc-line-height / $doc-font-size +rem;
+}
+// @include font-size()
+@mixin font-size($size: $doc-font-size, $line-height-multiplier: 1) {
+  font-size: $size / $doc-font-size +rem;
+  line-height: ($line-height-multiplier * $doc-line-height) / $doc-font-size +rem;
+  // margin-bottom: $doc-line-height / $doc-font-size +rem;
 }
 
 // MAIN
@@ -42,10 +48,9 @@ html {
   font-size: 100%;
 }
 body {
+  @include font-size(18);
   font-family: $base-font-family;
-  font-size: $base-font-size;
   font-weight: 300;
-  line-height: $base-line-height;
   color: $text-color-darker;
 
   text-rendering: optimizelegibility;
@@ -59,6 +64,7 @@ header {
   text-align: center;
 }
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  @extend %vertical-rythm-margins;
   font-family: $header-font-family;
   font-weight: 700;
   text-transform: uppercase;
@@ -66,23 +72,25 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   color: $text-color;
 }
 h1, .h1 {
-  font-size: 2em;
+  @include font-size(36, 2);
   font-weight: 400;
-  line-height: 1.35em;
 }
 h2, .h2 {
-  font-size: 1.6em;
+  @include font-size(29);
   font-weight: 500;
 }
 h3, .h3 {
-  font-size: 1.2em;
+  @include font-size(22);
   font-weight: 500;
 }
 h4, .h4 {
-  font-size: 1.1em;
+  @include font-size(20);
 }
 h5, .h5 {
-  font-style: 0.9em;
+  @include font-size(16);
+}
+h6, .h6 {
+  @include font-size(12);
 }
 
 // LINKS
@@ -96,8 +104,7 @@ a:hover, a:hover .icon {
 
 // GENERAL
 code {
+  @include font-size($fixed-font-size);
   font-family: $fixed-font-family;
-  font-size: $fixed-font-size;
-  line-height: $fixed-line-height;
 }
 

@@ -9,7 +9,7 @@ published: true
 
 # Test display of HTML elements
 
-## This is 2nd level heading
+## This is 2nd level heading, indeed it is
 
 This is a test paragraph.
 
@@ -64,6 +64,10 @@ This is a paragraph before a **numbered** list (`ol`). Note that the spacing bet
 4. Four. This is the last item in this list. Let us terminate the list now without making any more fuss about it.
 
 Some of the elements tested above are typically displayed in a monospace font, often using the _same_ presentation for all of them. This tests whether that is the case on your browser:
+
+# This is yet another test header
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in dictum dolor. In mi nunc, tincidunt vel placerat id, adipiscing vel enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper convallis lacus. In consequat urna in est blandit euismod. Nam ut nulla at mauris hendrerit vulputate eget vitae magna. Sed eu leo ac ante ultricies lobortis luctus eget magna. Proin in rutrum lacus. Donec posuere placerat sapien mattis molestie. Nunc ut mi nulla. Sed elit quam, sodales quis lacus ac, placerat mattis enim. Integer lacus velit, sagittis vel erat a, aliquam convallis leo. Vestibulum sed rutrum felis. Morbi cursus consequat enim, eget blandit elit dictum laoreet. Vivamus vehicula sapien nulla, in condimentum magna placerat vel. Praesent turpis nisi, lobortis non suscipit et, dignissim ac augue. Sed ut tellus varius, sagittis turpis id, sodales ante. Nunc in turpis ac purus molestie egestas. Pellentesque vestibulum lectus vel libero laoreet pulvinar. Etiam urna mi, varius eu mauris sit amet, sodales volutpat metus. Nam aliquam iaculis fermentum. Ut erat eros, ultricies in mattis sit amet, suscipit in enim. Curabitur hendrerit enim id euismod interdum. Donec sollicitudin facilisis ultrices. Pellentesque cursus lectus ac condimentum dapibus. Ut felis tellus, vulputate eget auctor vitae, scelerisque quis sapien. Donec pellentesque neque elit, eget laoreet turpis cursus non. Proin accumsan, mi vel tempus adipiscing, enim arcu varius mauris, nec fermentum nisl diam at mi. Cras sit amet odio id magna vehicula volutpat. Nullam sollicitudin dapibus neque at pulvinar. Nullam id venenatis justo, sit amet volutpat augue. Proin sed felis nibh. Nam non lacus a est blandit semper sed et lectus. Cras ante lacus, laoreet vel risus vitae, ornare scelerisque tellus. Aliquam pulvinar rhoncus neque hendrerit semper. Duis imperdiet laoreet lorem sit amet accumsan. Nullam magna justo, lobortis quis odio sit amet, pellentesque eleifend nunc. In gravida lectus quis tristique tempus. Phasellus sit amet commodo urna. Maecenas eleifend quam eu erat rhoncus, ac faucibus erat lacinia. Suspendisse rhoncus lorem et vulputate cursus. Quisque blandit ligula eros, a elementum nisi pellentesque at. Maecenas vulputate sed dui a volutpat. Proin blandit velit nisi, quis ultrices lacus fermentum sed. Cras tempor magna vitae porttitor pulvinar. Nulla elementum, lectus vel posuere posuere, urna nunc facilisis arcu, eget dictum urna risus vitae quam. Vestibulum sed facilisis nunc. Nullam hendrerit diam mauris, vulputate vulputate neque sollicitudin sed. Sed nunc odio, mollis blandit ligula eu, facilisis malesuada augue. Nam auctor mollis pulvinar. Phasellus rutrum in ante id semper. Curabitur id tellus cursus, pretium elit ac, posuere tortor. Nulla ut euismod erat. Fusce porta mattis velit, quis rutrum libero vulputate in. Nam lectus nunc, aliquam sed nulla facilisis, convallis semper dui. Proin gravida mollis tortor nec porttitor. Morbi vulputate vulputate sagittis.
 
 * * *
 

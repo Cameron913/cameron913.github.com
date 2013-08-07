@@ -21,19 +21,21 @@ header {
   // margin-bottom: 20px;
 }
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  // margin: 0.8em 0;
   @extend %vertical-rythm-margins;
   display: inline-block;
 }
 article {
-  margin-bottom: 25px;
+  @extend %vertical-rythm-margins;
+  //margin-bottom: 25px;
 }
 time {
-	margin: 0px;
+	margin-left: 0px;
+  margin-right: 0px;
 }
 img {
   @extend %vertical-rythm-margins;
-  margin: 0px auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
   height: auto;
   display: block;
@@ -43,6 +45,8 @@ ul, ol {
   padding: 0px;
 }
 li {
+  margin-top: 0;
+  margin-bottom: 0;
   list-style: none;
 }
 address {
@@ -50,6 +54,7 @@ address {
   font-style: normal;
 }
 hr {
+  margin-bottom: $doc-line-height - $line-width;
   height: $line-width;
   background-color: #ddd;
   border: 0;

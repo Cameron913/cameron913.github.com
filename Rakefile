@@ -1,6 +1,7 @@
 # rake blog["Post Title"]
 # rake work["Project Title"]
 # rake deploy
+# rake watch
 
 # Standard library
 require 'rake'
@@ -13,35 +14,6 @@ config = YAML.load_file("_config.yml")
 # Set "rake post" as default task
 task :default => :deploy
 
-
-# Deploy _site to GitHub Pages (via /deploy)
-# http://winstonyw.com/2013/02/24/jekyll_haml_sass_and_github_pages/
-desc "Deploy"
-task :deploy do
-	puts "## Deploying to Github Pages..."
-
-	deploy_dir = "_deploy"
-	public_dir = "_site"
-
-	(Dir["#{deploy_dir}/*"]).each { |f| rm_rf(f) }
-
-	puts "## Copying #{public_dir} to #{deploy_dir}"
-	cp_r "#{public_dir}/.", deploy_dir
-
-	cd "#{deploy_dir}" do
-		system "git add ."
-		system "git add -u"
-
-		puts "## Commiting: Site updated at #{Time.now.utc}"
-		message = "Site updated at #{Time.now.utc}"
-		system "git commit -m \"#{message}\""
-
-		puts "## Pushing generated #{deploy_dir} website"
-		system "git push origin master --force"
-
-		puts "## Deploy Complete!"
-	end
-end
 
 # rake blog["Post Title"]
 desc "Create a post in _posts/Blog"
@@ -102,3 +74,48 @@ task :work, :title do |t, args|
     end
   end
 end
+
+# Deploy _site to GitHub Pages (via /deploy)
+# http://winstonyw.com/2013/02/24/jekyll_haml_sass_and_github_pages/
+desc "Deploy"
+task :deploy do
+  puts "## Deploying to Github Pages..."
+
+  deploy_dir = "_deploy"
+  public_dir = "_site"
+
+  (Dir["#{deploy_dir}/*"]).each { |f| rm_rf(f) }
+
+  puts "## Copying #{public_dir} to #{deploy_dir}"
+  cp_r "#{public_dir}/.", deploy_dir
+
+  cd "#{deploy_dir}" do
+    system "git add ."
+    system "git add -u"
+
+    puts "## Commiting: Site updated at #{Time.now.utc}"
+    message = "Site updated at #{Time.now.utc}"
+    system "git commit -m \"#{message}\""
+
+    puts "## Pushing generated #{deploy_dir} website"
+    system "git push origin master --force"
+
+    puts "## Deploy Complete!"
+  end
+end
+
+# rake watch
+desc "Starts Guard and runs Jekyll server with watch option"
+task :watch do
+  puts "## Running Guard and Jekyll..."
+
+  run_guard = Process.spawn("guard --no-bundler-warning")
+  run_jekyll = Process.spawn("jekyll serve -w")
+
+  trap("INT") {
+    [run_guard, run_jekyll].each { |pid| Process.kill(9, pid) rescue Errno::ESRCH }
+    exit 0
+  }
+  [run_guard, run_jekyll].each { |pid| Process.wait(pid) }
+end
+
