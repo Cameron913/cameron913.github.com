@@ -30,16 +30,25 @@ $icon-font-family: "entypo", "entypo-social";
 
 
 // MIXINS
-// @extend %vertical-rythm-margins
-%vertical-rythm-margins {
-  margin-top: 0px;
+// @extend %vr-margins;
+%vr-margins {
+  margin-top: 0;
   margin-bottom: $doc-line-height / $doc-font-size +rem;
 }
-// @include font-size()
+// @extend %vr-padding;
+%vr-padding {
+  padding-top: $doc-line-height / $doc-font-size +rem;
+  padding-bottom: $doc-line-height / $doc-font-size +rem;
+}
+// @include vr-margins(); (for where a subtractor is needed)
+@mixin vr-margins($subtractor: 0) {
+  margin-top: 0px;
+  margin-bottom: ($doc-line-height - $subtractor) / $doc-font-size +rem;
+}
+// @include font-size();
 @mixin font-size($size: $doc-font-size, $line-height-multiplier: 1) {
   font-size: $size / $doc-font-size +rem;
   line-height: ($line-height-multiplier * $doc-line-height) / $doc-font-size +rem;
-  // margin-bottom: $doc-line-height / $doc-font-size +rem;
 }
 
 // MAIN
@@ -64,7 +73,7 @@ header {
   text-align: center;
 }
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  @extend %vertical-rythm-margins;
+  @extend %vr-margins;
   font-family: $header-font-family;
   font-weight: 700;
   text-transform: uppercase;
@@ -76,7 +85,7 @@ h1, .h1 {
   font-weight: 400;
 }
 h2, .h2 {
-  @include font-size(29);
+  @include font-size(29, 2);
   font-weight: 500;
 }
 h3, .h3 {
@@ -106,5 +115,13 @@ a:hover, a:hover .icon {
 code {
   @include font-size($fixed-font-size);
   font-family: $fixed-font-family;
+}
+pre { // should be inside code tags
+  @extend %vr-margins;
+  @extend %vr-padding;
+  @include font-size($fixed-font-size);
+  background-color: #eaeaea;
+  padding-left: $doc-line-height / $doc-font-size +rem;
+  padding-right: $doc-line-height / $doc-font-size +rem;
 }
 

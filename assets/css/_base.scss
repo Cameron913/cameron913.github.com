@@ -16,16 +16,16 @@ body {
   background-color: $background-color;
 }
 header {
-  @extend %vertical-rythm-margins;
+  @extend %vr-margins;
   // margin-top: 30px;
   // margin-bottom: 20px;
 }
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  @extend %vertical-rythm-margins;
+  @extend %vr-margins;
   display: inline-block;
 }
 article {
-  @extend %vertical-rythm-margins;
+  @extend %vr-margins;
   //margin-bottom: 25px;
 }
 time {
@@ -33,7 +33,7 @@ time {
   margin-right: 0px;
 }
 img {
-  @extend %vertical-rythm-margins;
+  @extend %vr-margins;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -41,7 +41,7 @@ img {
   display: block;
 }
 ul, ol {
-  @extend %vertical-rythm-margins;
+  @extend %vr-margins;
   padding: 0px;
 }
 li {
@@ -50,23 +50,25 @@ li {
   list-style: none;
 }
 address {
-  @extend %vertical-rythm-margins;
+  @extend %vr-margins;
   font-style: normal;
 }
 hr {
-  margin-bottom: $doc-line-height - $line-width;
-  height: $line-width;
+  @include vr-margins($line-width);
+  height: $line-width +px;
   background-color: #ddd;
+  color: #ddd; // for IE
   border: 0;
 }
 footer {
   @extend %clearfix;
+  padding-top: $doc-line-height - $line-width +px;
   padding-bottom: 10px;
-  border-top: $line-width solid #ddd;
+  border-top: $line-width +px solid #ddd;
 }
 p {
-  @extend %vertical-rythm-margins;
+  @extend %vr-margins;
 }
 blockquote {
-  @extend %vertical-rythm-margins;
+  @extend %vr-margins;
 }
