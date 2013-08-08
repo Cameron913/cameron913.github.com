@@ -12,9 +12,12 @@ gem 'rdiscount',        '=1.6.8'
 gem 'RedCloth',         '=4.2.9'
 
 # Custom
-gem 'sass',             '~>3.2.9'
 gem 'bundler',          '~>1.3.5'
 gem 'rake',             '~>0.8.7'
 gem 'guard',            '~>1.8.2'
 gem 'guard-jekyll',     '~>1.3.0'
 gem 'guard-livereload', '~>1.4.0'
+gem 'jekyll-assets',    '~>0.6.1'
+gem 'sass',             '~>3.2.9'
+gem 'coffee-script',    '~>2.2.0'
+gem 'uglifier',         '~>2.1.2'

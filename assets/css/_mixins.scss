@@ -17,4 +17,17 @@
 	}
 }
 
-$line-width: 4;
+$line-width: 4; // for rules, borders, <hr> etc
+
+// GENERAL CSS MIXINS
+
+// @include border-radius();
+@mixin border-radius($radius: 6) {
+	-webkit-border-radius:   $radius +px;
+	-moz-border-radius:      $radius +px;
+	border-radius:           $radius +px;
+
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+}

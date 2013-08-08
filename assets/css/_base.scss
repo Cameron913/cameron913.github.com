@@ -72,3 +72,19 @@ p {
 blockquote {
   @extend %vr-margins;
 }
+code {
+  @include border-radius();
+  padding: 4px 8px;
+  background-color: $background-color-dark;
+}
+pre {
+  @include border-radius();
+  @extend %vr-margins;
+  @extend %vr-padding;
+  padding-left: $vr-unit +rem;
+  padding-right: $vr-unit +rem;
+  background-color: $background-color-dark;
+  code {
+    padding: 0;
+  }
+}

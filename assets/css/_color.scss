@@ -4,12 +4,8 @@
 // --------------------------------------------------------------- //
 
 $brand-color:      #9886AC; // #9A97BD
-$text-color:       #ccc;
-$background-color: #fdfdfd;
-	$base-color:     	#fdfdfd;
-// $action-color:   #TBD;
-// $function-color: #TBD;
-// $alert-color:    #TBD;
+$text-color:       #333;
+$background-color: #ffffff; // #fdfdfd
 
 // BRAND
 $brand-color-light: lighten( $brand-color, 10% );
@@ -26,14 +22,8 @@ $text-color-darker: darken( $text-color, 40% );
 // BACKGROUND
 $background-color-light: lighten( $text-color, 10% );
 $background-color-lighter: lighten( $text-color, 20% );
-$background-color-dark: #fafafa;
+$background-color-dark: #eaeaea;
 $background-color-darker: darken( $text-color, 40% );
-
-// BASE
-$base-color-light: lighten( $base-color, 10% );
-$base-color-lighter: lighten( $base-color, 20% );
-$base-color-dark: darken( $base-color, 10% );
-$base-color-darker: darken( $base-color, 40% );
 
 
 // test out saturate / desaturate, adjust-hue, alpha, and tint / shade

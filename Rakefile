@@ -8,6 +8,9 @@ require 'rake'
 require 'yaml'
 require 'fileutils'
 
+# others
+require 'guard'
+
 # Load the configuration file
 config = YAML.load_file("_config.yml")
 

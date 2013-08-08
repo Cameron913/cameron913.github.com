@@ -5,6 +5,7 @@
 
 $doc-font-size: 16;
 $doc-line-height: 28;
+$vr-unit: $doc-line-height / $doc-font-size;
 
 // Font weights
 // $light: 100;
@@ -33,12 +34,12 @@ $icon-font-family: "entypo", "entypo-social";
 // @extend %vr-margins;
 %vr-margins {
   margin-top: 0;
-  margin-bottom: $doc-line-height / $doc-font-size +rem;
+  margin-bottom: $vr-unit +rem;
 }
 // @extend %vr-padding;
 %vr-padding {
-  padding-top: $doc-line-height / $doc-font-size +rem;
-  padding-bottom: $doc-line-height / $doc-font-size +rem;
+  padding-top: $vr-unit +rem;
+  padding-bottom: $vr-unit +rem;
 }
 // @include vr-margins(); (for where a subtractor is needed)
 @mixin vr-margins($subtractor: 0) {
@@ -51,6 +52,7 @@ $icon-font-family: "entypo", "entypo-social";
   line-height: ($line-height-multiplier * $doc-line-height) / $doc-font-size +rem;
 }
 
+
 // MAIN
 html {
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004); // font smoothing hack
@@ -60,7 +62,7 @@ body {
   @include font-size(18);
   font-family: $base-font-family;
   font-weight: 300;
-  color: $text-color-darker;
+  color: $text-color;
 
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
@@ -116,12 +118,9 @@ code {
   @include font-size($fixed-font-size);
   font-family: $fixed-font-family;
 }
-pre { // should be inside code tags
-  @extend %vr-margins;
-  @extend %vr-padding;
+pre { // should contain code tags
   @include font-size($fixed-font-size);
-  background-color: #eaeaea;
-  padding-left: $doc-line-height / $doc-font-size +rem;
-  padding-right: $doc-line-height / $doc-font-size +rem;
+  font-family: $fixed-font-family;
+  color: $text-color-light;
 }
 
