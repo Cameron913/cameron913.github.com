@@ -10,19 +10,19 @@ $background-color: #ffffff; // #fdfdfd
 // BRAND
 $brand-color-light: lighten( $brand-color, 10% );
 $brand-color-lighter: lighten( $brand-color, 20% );
-$brand-color-dark: darken( $brand-color, 10% );
+$brand-color-dark: darken( $brand-color, 10% ); // hover
 $brand-color-darker: darken( $brand-color, 20% );
 
 // TEXT
 $text-color-light: lighten( $text-color, 10% );
-$text-color-lighter: lighten( $text-color, 20% );
+$text-color-lighter: lighten( $text-color, 50% ); // work icons
 $text-color-dark: darken( $text-color, 10% );
 $text-color-darker: darken( $text-color, 40% );
 
 // BACKGROUND
 $background-color-light: lighten( $text-color, 10% );
 $background-color-lighter: lighten( $text-color, 20% );
-$background-color-dark: #eaeaea;
+$background-color-dark: #eaeaea; // #ddd // border stroke, <hr>, <pre>, <code>
 $background-color-darker: darken( $text-color, 40% );
 
 

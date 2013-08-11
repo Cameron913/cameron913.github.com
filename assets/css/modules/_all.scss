@@ -4,10 +4,11 @@
 
 // LOGO - (main header)
 .logo {
-  padding: 15px 0px 20px;
+  //padding: 15px 0px 20px;
   h1 {
-    line-height: .9em;
-    margin: 0px;
+    @include font-size(31);
+    margin-top: $vr-unit +rem;
+    margin-bottom: $vr-unit +rem;
     font-weight: 700;
   }
 }
@@ -15,10 +16,14 @@
 // TOP NAV
 .top-nav {
 	@extend %clearfix;
+  // padding-top: 0; margin-top: 0;
+  border-bottom: $line-width +px solid $background-color-dark;
+  margin-bottom: 1.75rem;
 	ul {
+    margin-bottom: 0;
 	  text-align: center;
 	  list-style: none;
-	  margin: 0px;
+    width: 100%;
 	}
 	li {
 	  display: inline-block;
@@ -26,43 +31,71 @@
 	  float: left;
 	  width: 33.33%;
 	}
-	a { // top nav
+	a {
 	  display: block;
 	  margin: 0px;
 	}
 }
 .work #work, .blog #blog, .about #about { // highlight current nav section
   color: $brand-color;
-  border-bottom: $line-width solid $brand-color;
+  &:after { // highlighted block
+    display: block;
+    position: relative;
+    top: $line-width +px;
+    content: "";
+    width: 100%;
+    height: $line-width +px;
+    background-color: $brand-color;
+  }
 }
 
-// ICONS  //  FIX THIS MESS !!!
-.icon {
-  display: inline-block;
-  color: $text-color;
+// ICONS
+%icon { // add to element or 'a'
+  display: inline;
   font-family: $icon-font-family;
-  line-height: 0;
   font-style: normal;
-  position: relative;
-  top: -0.16em;
-}
-.work .entries .icon, .work header .icon {
-  font-size: 3.5em;
-}
-.blog .entries .icon, .blog header .icon {
+  font-weight: normal;
   font-size: 2em;
+  vertical-align: -12%;
+  color: inherit;
+  &[href] {
+    color: inherit;
+  }
+  &[href]:hover {
+    color: $brand-color-dark;
+  }
 }
-footer .icon {
-  font-size: 2em;
-}
+
+.icon-cal:before { @extend %icon; content: "📅"; } // &#128197; // 🕔
+.icon-cal.spaced:before { content: "📅\a0 "; word-spacing: -0.15em; } // &nbsp;
+
+.icon-github:before { @extend %icon; content: ""; } // &#62208;
+.icon-github.spaced:before { content: "\a0 "; word-spacing: -0.15em; } // &nbsp;
+
+.icon-behance:before { @extend %icon; content: ""; } // &#62208;
+.icon-behance.spaced:before { content: "\a0 "; word-spacing: -0.15em; } // &nbsp;
+
+.icon-email:before { @extend %icon; content: "🔿"; } // &#128319;
+.icon-email.spaced:before { content: "🔿\a0 "; word-spacing: -0.15em; } // &nbsp;
+
+.icon-linkedin:before { @extend %icon; content: ""; } // &#62233;
+.icon-linkedin.spaced:before { content: "\a0 "; word-spacing: -0.15em; } // &nbsp;
+
+.icon-twitter:before { @extend %icon; content: ""; } // &#62217;
+.icon-twitter.spaced:before { content: "\a0 "; word-spacing: -0.15em; } // &nbsp;
+
+.icon-link:before { @extend %icon; content: "🔗"; } // &#128279;
+.icon-link.spaced:before { content: "🔗\a0 "; word-spacing: -0.15em; } // &nbsp;
 
 // ENTRIES - (work archive, blog archive)
 .entries {
-  li {
-    // margin-bottom: 30px;
+  li {}
+  h1 {}
+  time {
+    color: $text-color-lighter;
   }
 	img {
-	  // margin-bottom: 20px;
+    @extend %vr-margins; // deal with vertical-rythm
 	}
 }
 
@@ -78,7 +111,6 @@ footer .icon {
     list-style: decimal;
   }
   a:hover {
-    // text-decoration: underline;
     padding-bottom: 1px;
     border-bottom: 1px solid $brand-color;
   }

@@ -5,5 +5,7 @@ image_alt:
 layout: work_entry
 category: work
 github:
+behance:
+link:
 published: false
 ---

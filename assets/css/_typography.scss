@@ -3,56 +3,6 @@
 // - take care of global typographic styles
 // --------------------------------------------------------------- //
 
-$doc-font-size: 16;
-$doc-line-height: 28;
-$vr-unit: $doc-line-height / $doc-font-size;
-
-// Font weights
-// $light: 100;
-// $regular: 400;
-// $bold: 600;
-
-// Base Font
-$base-font-family: "museo-sans", sans-serif;
-$base-line-height: $doc-line-height +px;
-// $base-font-weight: $regular;
-
-// Fixed Font
-$fixed-font-family: monaco, monospace;
-$fixed-line-height: $base-line-height;
-$fixed-font-size: 14;
-// $fixed-font-weight: $regular;
-
-// Headings
-$header-font-family: "brandon-grotesque", sans-serif;
-
-// ICONS
-$icon-font-family: "entypo", "entypo-social";
-
-
-// MIXINS
-// @extend %vr-margins;
-%vr-margins {
-  margin-top: 0;
-  margin-bottom: $vr-unit +rem;
-}
-// @extend %vr-padding;
-%vr-padding {
-  padding-top: $vr-unit +rem;
-  padding-bottom: $vr-unit +rem;
-}
-// @include vr-margins(); (for where a subtractor is needed)
-@mixin vr-margins($subtractor: 0) {
-  margin-top: 0px;
-  margin-bottom: ($doc-line-height - $subtractor) / $doc-font-size +rem;
-}
-// @include font-size();
-@mixin font-size($size: $doc-font-size, $line-height-multiplier: 1) {
-  font-size: $size / $doc-font-size +rem;
-  line-height: ($line-height-multiplier * $doc-line-height) / $doc-font-size +rem;
-}
-
-
 // MAIN
 html {
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004); // font smoothing hack
@@ -75,7 +25,6 @@ header {
   text-align: center;
 }
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  @extend %vr-margins;
   font-family: $header-font-family;
   font-weight: 700;
   text-transform: uppercase;

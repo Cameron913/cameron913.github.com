@@ -4,9 +4,11 @@ layout: default
 <article>
 	<header class="wrap">
 		<h1>
-			<a href="{{ post.url }}">{{ page.title }}</a>
+			{{ page.title }}
+			{% if page.github %}<a href="{{ page.github }}" target="_blank" class="icon-github"></a>{% endif %}
+			{% if page.behance %}<a href="{{ page.behance }}" target="_blank" class="icon-behance"></a>{% endif %}
+			{% if page.link %}<a href="{{ page.link }}" target="_blank" class="icon-link"></a>{% endif %}
 		</h1>
-		{% if page.github %}<a href="{{ page.github }}" target="_blank" class="icon">&#62208;</a>{% endif %}
 	</header>
 	{% if page.image %}<img src="{{ page.image }}" alt="{{ page.image_alt }}" />{% endif %}
 	<section class="content">

@@ -16,9 +16,7 @@ body {
   background-color: $background-color;
 }
 header {
-  @extend %vr-margins;
-  // margin-top: 30px;
-  // margin-bottom: 20px;
+  margin: 0;
 }
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   @extend %vr-margins;
@@ -26,7 +24,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 article {
   @extend %vr-margins;
-  //margin-bottom: 25px;
 }
 time {
 	margin-left: 0px;
@@ -64,7 +61,7 @@ footer {
   @extend %clearfix;
   padding-top: $doc-line-height - $line-width +px;
   padding-bottom: 10px;
-  border-top: $line-width +px solid #ddd;
+  border-top: $line-width +px solid $background-color-dark;
 }
 p {
   @extend %vr-margins;

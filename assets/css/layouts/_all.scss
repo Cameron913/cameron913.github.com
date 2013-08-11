@@ -13,8 +13,21 @@
 }
 
 .home {}
-.work {}
-.blog {}
+.work {
+  .entries {}
+  h1 a[class*="icon"] {
+    color: $text-color-lighter;
+  }
+}
+.blog {
+  .entries {
+    margin-bottom: 0;
+  }
+  h1 {
+    display: block;
+    margin-bottom: 0;
+  }
+}
 .about {}
 
 /* MEDIA QUERIES */

@@ -4,10 +4,10 @@
 - [Scale (type boilerplate)](https://github.com/viljamis/Scale)
 - [Jekyll](https://github.com/mojombo/jekyll/wiki)
 - [Jekyll Docs](http://jekyllrb.com/docs/home/)
+- [Entypo Characters](http://www.entypo.com/characters/)
 
 # TO-DO
 - learn everything about Jekyll - https://learn.andrewmunsell.com/learn/jekyll-by-example/tutorial
-- fix sass-globbing gem
 - set blog permalinks only to use /:categories/:year-:month-:day/:title.html #apparentlyimpossible
 - pretty permalinks (remove file extentions from urls)
 - category pagination
@@ -16,15 +16,12 @@
 - remove /assets/css/style.css from sitemap
 - transition: in-out - http://roybarber.com/
 - add cloudflare support http://www.cloudflare.com/ (move images off github)
-- troubleshoot "&nbsp;" (non-breaking space) on octocats
-- recompose icon and link :hover & :active colors
-- fix icon vertical-align (mainly Firefox, also Safari) - http://stackoverflow.com/questions/13477219/vertical-align-and-inline-block-behaving-annoyingly-different-in-chrome-and-fire
-- add HTML5 Boilerplate (or just update with project template content)
 - compile list of learning / reference resources (desert island) re: http://quan.io/resources.html
 - change clock icon to calendar
 - fine-tune icon font - http://fontello.com/ (maybe - http://www.entypo.com/characters/)
 - add Bourbon and Neat - http://bourbon.io/ - http://neat.bourbon.io/
 - create work navigation with present.js - https://github.com/mbostock/d3/blob/gh-pages/talk/20111116/present/present.js - http://mbostock.github.io/d3/talk/20111116/#1
+- add post search
 
 # IDEAS
 - paper.js - http://paperjs.org/examples/future-splash/

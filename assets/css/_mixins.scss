@@ -3,7 +3,41 @@
 // - mixins for @extend, variables
 // --------------------------------------------------------------- //
 
-// @extend %clearfix;
+// VARS
+$line-width: 4; // for rules, borders, <hr> etc
+
+// TYPOGRAPHY
+// control vars
+$doc-font-size: 16;
+$doc-line-height: 28;
+$vr-unit: $doc-line-height / $doc-font-size; // use with +rem
+// fonts
+$base-font-family: "museo-sans", sans-serif;
+$base-line-height: $doc-line-height +px;
+$fixed-font-family: monaco, monospace;
+$fixed-line-height: $base-line-height;
+$fixed-font-size: 14;
+$header-font-family: "brandon-grotesque", sans-serif;
+$icon-font-family: "entypo", "entypo-social";
+// typography mixins
+%vr-margins {
+  margin-top: 0;
+  margin-bottom: $vr-unit +rem;
+}
+%vr-padding {
+  padding-top: $vr-unit +rem;
+  padding-bottom: $vr-unit +rem;
+}
+@mixin vr-margins($subtractor: 0) { // (for where a subtractor is needed)
+  margin-top: 0px;
+  margin-bottom: ($doc-line-height - $subtractor) / $doc-font-size +rem;
+}
+@mixin font-size($size: $doc-font-size, $line-height-multiplier: 1) {
+  font-size: $size / $doc-font-size +rem;
+  line-height: ($line-height-multiplier * $doc-line-height) / $doc-font-size +rem;
+}
+
+// OTHER MIXINS
 %clearfix {
 	zoom: 1;
 	&:before, &:after {
@@ -17,11 +51,7 @@
 	}
 }
 
-$line-width: 4; // for rules, borders, <hr> etc
-
 // GENERAL CSS MIXINS
-
-// @include border-radius();
 @mixin border-radius($radius: 6) {
 	-webkit-border-radius:   $radius +px;
 	-moz-border-radius:      $radius +px;
