@@ -91,9 +91,6 @@
 .entries {
   li {}
   h1 {}
-  time {
-    color: $text-color-lighter;
-  }
 	img {
     @extend %vr-margins; // deal with vertical-rythm
 	}

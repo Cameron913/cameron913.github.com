@@ -11,6 +11,11 @@
 	margin-right: auto;
 	display: block;
 }
+.wrap-wide { // for images and other wide elements
+  @extend .wrap;
+  width: 100%;
+  max-width: 1024px; // max width full ipad landscape
+}
 
 .home {}
 .work {
@@ -20,12 +25,15 @@
   }
 }
 .blog {
-  .entries {
+  .entries, article {
     margin-bottom: 0;
-  }
-  h1 {
-    display: block;
-    margin-bottom: 0;
+    h1 {
+      display: block;
+      margin-bottom: 0;
+    }
+    time {
+      color: $text-color-lighter;
+    }
   }
 }
 .about {}
