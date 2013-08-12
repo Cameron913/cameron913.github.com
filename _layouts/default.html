@@ -13,6 +13,9 @@
 	<!--[if lt IE 9]>
 		<script type="text/javascript" src="/assets/js/html5shiv.js"></script>
 	<![endif]-->
+	<!-- PREFETCHING (firefox) / PRERENDERING (chrome) -->
+	<link rel="prefetch" href="/work/" /><link rel="prerender" href="/work/" />
+	<link rel="prefetch" href="/blog/" /><link rel="prerender" href="/blog/" />
 </head>
 <body class="{% if page.label %}{{ page.label }}{% else %}{{ page.categories }}{% endif %}">
 

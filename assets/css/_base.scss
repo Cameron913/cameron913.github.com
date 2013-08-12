@@ -72,6 +72,14 @@ p {
 blockquote {
   @extend %vr-margins;
 }
+sup, sub { // prevent from disrupting vertical rythm
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+sub {
+  top: 0.4em;
+}
 code {
   @include border-radius();
   padding: 4px 8px;
