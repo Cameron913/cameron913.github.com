@@ -5,9 +5,9 @@ layout: default
 	<header class="wrap">
 		<h1>
 			{{ page.title }}
-			{% if page.github %}<a href="{{ page.github }}" target="_blank" class="icon-github"></a>{% endif %}
-			{% if page.behance %}<a href="{{ page.behance }}" target="_blank" class="icon-behance"></a>{% endif %}
-			{% if page.link %}<a href="{{ page.link }}" target="_blank" class="icon-link"></a>{% endif %}
+			{% if page.github %}<a  href="{{ page.github }}"  data-tooltip="GitHub"  target="_blank" class="icon-github"></a>{% endif %}
+			{% if page.behance %}<a href="{{ page.behance }}" data-tooltip="Behance" target="_blank" class="icon-behance"></a>{% endif %}
+			{% if page.link %}<a    href="{{ page.link }}"    data-tooltip="Link"    target="_blank" class="icon-link"></a>{% endif %}
 		</h1>
 	</header>
 	{% if page.image %}<img src="{{ page.image }}" alt="{{ page.image_alt }}" class="wrap-wide" />{% endif %}

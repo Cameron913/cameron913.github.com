@@ -51,7 +51,9 @@ $icon-font-family: "entypo", "entypo-social";
 	}
 }
 
-// GENERAL CSS MIXINS // more here: http://css-tricks.com/snippets/css/useful-css3-less-mixins/
+// GENERAL CSS MIXINS
+// more here: http://css-tricks.com/snippets/css/useful-css3-less-mixins/
+// http://sachagreif.com/useful-sass-mixins/
 @mixin border-radius($radius: 6) {
 	-webkit-border-radius:   $radius +px;
 	-moz-border-radius:      $radius +px;
