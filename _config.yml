@@ -1,5 +1,5 @@
 # Jekyll
-permalink:       /:categories/:year/:title.html
+permalink:       /:categories/:year/:title/
 url:             http://camerongarrett.com
 exclude:         ['README.md', 'Gemfile', 'Guardfile', 'Rakefile', '_resources/']
 

@@ -8,8 +8,6 @@
 
 # TO-DO
 - learn everything about Jekyll - https://learn.andrewmunsell.com/learn/jekyll-by-example/tutorial
-- set blog permalinks only to use /:categories/:year-:month-:day/:title.html #apparentlyimpossible
-- pretty permalinks (remove file extentions from urls)
 - category pagination
 - add 404 page
 - Google anylytics + rich snippets - https://support.google.com/webmasters/answer/99170?hl=en
