@@ -81,14 +81,14 @@ sub {
   top: 0.4em;
 }
 code {
-  @include border-radius();
+  border-radius: $radius +px;
   padding: 4px 8px;
   background-color: $background-color-dark;
 }
 pre {
-  @include border-radius();
   @extend %vr-margins;
   @extend %vr-padding;
+  border-radius: $radius +px;
   padding-left: $vr-unit +rem;
   padding-right: $vr-unit +rem;
   background-color: $background-color-dark;

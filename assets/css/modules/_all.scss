@@ -93,7 +93,7 @@ a[data-tooltip] {
   &:hover { // using :before will interfere with icons
     &:after {
       @include font-size(14);
-      @include border-radius();
+      border-radius: $radius +px;
       content: attr(data-tooltip);
       position: absolute;
       display: block;

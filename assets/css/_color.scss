@@ -25,16 +25,6 @@ $background-color-lighter: lighten( $text-color, 20% );
 $background-color-dark: #eaeaea; // #ddd // border stroke, <hr>, <pre>, <code>
 $background-color-darker: darken( $text-color, 40% );
 
-
 // test out saturate / desaturate, adjust-hue, alpha, and tint / shade
 // http://robots.thoughtbot.com/post/12974565313/controlling-color-with-sass-color-functions
 
-// @mixin brand-gradient {
-//   background: url( imagefallback.png ) repeat-x $brand-color-darker;
-//   background: -moz-radial-gradient(center, ellipse cover, $brand-color 22%, $brand-color-darker 100%);
-//   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(22%,$brand-color), color-stop(100%,$brand-color-darker));
-//   background: -webkit-radial-gradient(center, ellipse cover, $brand-color 22%,$brand-color-darker 100%);
-//   background: -o-radial-gradient(center, ellipse cover, $brand-color 22%,$brand-color-darker 100%);
-//   background: -ms-radial-gradient(center, ellipse cover, $brand-color 22%,$brand-color-darker 100%);
-//   background: radial-gradient(center, ellipse cover, $brand-color 22%,$brand-color-darker 100%);
-// }

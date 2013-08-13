@@ -5,13 +5,14 @@
 
 // VARS
 $line-width: 4; // for rules, borders, <hr> etc
+$radius:     6;
 
 // TYPOGRAPHY
-// control vars
+//   control vars
 $doc-font-size: 16;
 $doc-line-height: 28;
 $vr-unit: $doc-line-height / $doc-font-size; // use with +rem
-// fonts
+//   fonts
 $base-font-family: "museo-sans", sans-serif;
 $base-line-height: $doc-line-height +px;
 $fixed-font-family: monaco, monospace;
@@ -19,7 +20,7 @@ $fixed-line-height: $base-line-height;
 $fixed-font-size: 14;
 $header-font-family: "brandon-grotesque", sans-serif;
 $icon-font-family: "entypo", "entypo-social";
-// typography mixins
+//   typography mixins
 %vr-margins {
   margin-top: 0;
   margin-bottom: $vr-unit +rem;
@@ -51,15 +52,6 @@ $icon-font-family: "entypo", "entypo-social";
 	}
 }
 
-// GENERAL CSS MIXINS
-// more here: http://css-tricks.com/snippets/css/useful-css3-less-mixins/
+// more here:
+// http://css-tricks.com/snippets/css/useful-css3-less-mixins/
 // http://sachagreif.com/useful-sass-mixins/
-@mixin border-radius($radius: 6) {
-	-webkit-border-radius:   $radius +px;
-	-moz-border-radius:      $radius +px;
-	border-radius:           $radius +px;
-
-	-moz-background-clip:    padding;
-	-webkit-background-clip: padding-box;
-	background-clip:         padding-box;
-}
