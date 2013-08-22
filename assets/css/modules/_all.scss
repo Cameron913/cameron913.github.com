@@ -15,11 +15,10 @@
 
 // TOP NAV
 .top-nav {
-	@extend %clearfix;
-  // padding-top: 0; margin-top: 0;
   border-bottom: $line-width +px solid $background-color-dark;
   margin-bottom: 1.75rem;
 	ul {
+    @extend %clearfix;
     margin-bottom: 0;
 	  text-align: center;
 	  list-style: none;

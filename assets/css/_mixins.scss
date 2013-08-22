@@ -5,7 +5,7 @@
 
 // VARS
 $line-width: 4; // for rules, borders, <hr> etc
-$radius:     6;
+$radius:     6; // fix bleed with background-clip
 
 // TYPOGRAPHY
 //   control vars
@@ -40,16 +40,7 @@ $icon-font-family: "entypo", "entypo-social";
 
 // OTHER MIXINS
 %clearfix {
-	zoom: 1;
-	&:before, &:after {
-		content: "\0020";
-		display: block;
-		height: 0;
-		overflow: hidden;
-	}
-	&:after {
-		clear: both;
-	}
+	@include clearfix;
 }
 
 // more here:
