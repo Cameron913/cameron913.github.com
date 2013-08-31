@@ -1,7 +1,5 @@
 ---
 title:
-image: http://placekitten.com/600/260
-image_alt:
 layout: blog_entry
 category: blog
 published: false
