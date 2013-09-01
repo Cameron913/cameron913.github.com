@@ -34,7 +34,7 @@
 	}
 }
 .work #work, .blog #blog, .about #about { // highlight current nav section
-  color: $brand-color;
+  color: $link;
   &:after { // highlighted block
     display: block;
     position: relative;
@@ -42,7 +42,7 @@
     content: "";
     width: 100%;
     height: $line-width +px;
-    background-color: $brand-color;
+    background-color: $link;
   }
 }
 
@@ -109,20 +109,42 @@ a[data-tooltip] {
 
 
 // ARTICLE
-article {
-  header, .content {
-    background-color: $background-color; // this is the paper!
+article { // this is the paper!
+  header, .content, .entries header {
+    background-color: $background-color;
     padding-left: 10px;
     padding-right: 10px;
   }
+  header {
+    @include border-top-radius($radius + px);
+    padding-top: $vr-unit + rem;
+  }
+  .content {
+    @include border-bottom-radius($radius + px);
+    padding-bottom: $vr-unit + rem;
+  }
 }
+.blog {
+  .entries {
+    li:not(:first-of-type) header {
+      @include border-top-radius(0);
+    }
+    li:last-of-type header {
+      @include border-bottom-radius($radius + px);
+    }
+  }
+  .content {
+    padding-top: 0;
+  }
+}
+
 // ENTRIES - (work archive, blog archive)
 .entries {
   // background-color: $background-color;
   li {}
   h1 {}
 	img {
-    // @extend %vr-margins; // deal with vertical-rythm
+    @extend %vr-margins; // deal with vertical-rythm
 	}
 }
 

@@ -3,24 +3,26 @@ layout: default
 title: Work
 label: work
 ---
-<ul class="entries">
-	{% for post in site.categories.work %}
+<article>
+	<ul class="entries">
+		{% for post in site.categories.work %}
 
-	<li>
-		<header class="wrap">
-			<h1>
-				<a href="{{ post.url }}">{{ post.title }}</a>
-				{% if post.github %}<a href="{{ post.github }}"   data-tooltip="GitHub"  target="_blank" class="icon-github"></a>{% endif %}
-				{% if post.behance %}<a href="{{ post.behance }}" data-tooltip="Behance" target="_blank" class="icon-behance"></a>{% endif %}
-				{% if post.link %}<a href="{{ post.link }}"       data-tooltip="Link"    target="_blank" class="icon-link"></a>{% endif %}
-			</h1>
-		</header>
-		{% if post.image %}
-		<a href="{{ post.url }}">
-			<img src="{{ post.image }}" alt="{{ post.image_alt }}" class="wrap-wide" />
-		</a>
-		{% endif %}
-	</li>
+		<li>
+			<header class="wrap">
+				<h1>
+					<a href="{{ post.url }}">{{ post.title }}</a>
+					{% if post.github %}<a href="{{ post.github }}"   data-tooltip="GitHub"  target="_blank" class="icon-github"></a>{% endif %}
+					{% if post.behance %}<a href="{{ post.behance }}" data-tooltip="Behance" target="_blank" class="icon-behance"></a>{% endif %}
+					{% if post.link %}<a href="{{ post.link }}"       data-tooltip="Link"    target="_blank" class="icon-link"></a>{% endif %}
+				</h1>
+			</header>
+			{% if post.image %}
+			<a href="{{ post.url }}">
+				<img src="{{ post.image }}" alt="{{ post.image_alt }}" class="wrap-wide" />
+			</a>
+			{% endif %}
+		</li>
 
-	{% endfor %}
-</ul>
+		{% endfor %}
+	</ul>
+</article>
