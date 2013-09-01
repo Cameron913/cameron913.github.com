@@ -64,7 +64,6 @@ footer {
   @extend %clearfix;
   padding-top: $doc-line-height - $line-width +px;
   padding-bottom: 10px;
-  border-top: $line-width +px solid $background-color-dark;
 }
 p {
   @extend %vr-margins;

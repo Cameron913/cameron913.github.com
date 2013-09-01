@@ -15,7 +15,6 @@
 
 // TOP NAV
 .top-nav {
-  border-bottom: $line-width +px solid $background-color-dark;
   margin-bottom: 1.75rem;
 	ul {
     @extend %clearfix;
