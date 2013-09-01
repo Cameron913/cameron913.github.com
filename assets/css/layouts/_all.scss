@@ -6,7 +6,7 @@
 	width: 95%;
 	width: calc(100% - 20px);
 	min-width: 300px; // 320 (iphone portrait width) - 10 per side
-	max-width: 600px;
+	max-width: $max-width + px;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
@@ -32,7 +32,7 @@
       margin-bottom: 0;
     }
     time {
-      color: $text-color-lighter;
+      color: $text-color-light;
     }
   }
 }
@@ -49,9 +49,10 @@
   }
 }
 @media only screen and (min-width : 680px) {
-  .content {
-    ul, ol {
-      padding-left: 0px;
-    }
-  }
+  // .content {
+  //   ul, ol {
+  //     padding-left: 0px;
+  //   }
+  // }
+  // destroy paper side margins when small, add padding for text when large
 }

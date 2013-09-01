@@ -21,14 +21,12 @@ body {
 }
 
 // HEADERS
-header {
-  text-align: center;
-}
+header {}
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: $header-font-family;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
   color: $text-color;
 }
 h1, .h1 {
@@ -55,11 +53,11 @@ h6, .h6 {
 
 // LINKS
 a {
-  color: $brand-color;
+  color: $link;
   text-decoration: none;
 }
 a:hover, a:hover .icon {
-  color: $brand-color-dark;
+  color: $link-hover;
 }
 
 // GENERAL

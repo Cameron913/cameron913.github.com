@@ -13,13 +13,10 @@ body {
   padding: 0;
   margin: 0;
   min-width: 320px;
-  background-color: $background-color;
+  background-color: $brand-color;
 }
 header {
   margin: 0;
-  time {
-    color: $text-color-lighter;
-  }
 }
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   @extend %vr-margins;
@@ -33,7 +30,7 @@ time {
   margin-right: 0px;
 }
 img {
-  @extend %vr-margins;
+  // @extend %vr-margins;
   margin-left: auto;
   margin-right: auto;
   width: 100%;

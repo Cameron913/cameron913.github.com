@@ -4,7 +4,6 @@
 
 // LOGO - (main header)
 .logo {
-  //padding: 15px 0px 20px;
   h1 {
     @include font-size(31);
     margin-top: $vr-unit +rem;
@@ -60,7 +59,7 @@
     color: inherit;
   }
   &[href]:hover {
-    color: $brand-color-dark;
+    color: $link-hover;
   }
 }
 
@@ -108,17 +107,28 @@ a[data-tooltip] {
   }
 }
 
+
+// ARTICLE
+article {
+  header, .content {
+    background-color: $background-color; // this is the paper!
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 // ENTRIES - (work archive, blog archive)
 .entries {
+  // background-color: $background-color;
   li {}
   h1 {}
 	img {
-    @extend %vr-margins; // deal with vertical-rythm
+    // @extend %vr-margins; // deal with vertical-rythm
 	}
 }
 
 // CONTENT - (home, about, work entry, blog entry)
 .content {
+  padding-top: $vr-unit + rem;
   ul, ol {
     padding-left: 25px;
   }
