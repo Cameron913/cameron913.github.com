@@ -16,7 +16,11 @@
 @import "typography";
 @import "base";
 
+// modules
+@import "modules/header";
 @import "modules/all";
+
+// layouts
 @import "layouts/all";
 
 // extra
