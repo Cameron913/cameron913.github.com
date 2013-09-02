@@ -1,3 +1,3 @@
-guard 'livereload', :grace_period => 0.3 do
+guard 'livereload', :grace_period => 0.4 do
 	watch /_site/
 end

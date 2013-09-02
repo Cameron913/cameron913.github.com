@@ -19,17 +19,16 @@
 </head>
 <body class="{% if page.label %}{{ page.label }}{% else %}{{ page.categories }}{% endif %}">
 
-	<header class="logo">
+	<header class="logo wrap">
 		<h1><a href="/">Cameron Garrett</a></h1>
+		<nav role="navigation">
+			<ul class="wrap">
+				<li><a href="/work/" id="work" class="h4">Work</a></li>
+				<li><a href="/blog/" id="blog" class="h4">Blog</a></li>
+				<li><a href="/about/" id="about" class="h4">About</a></li>
+			</ul>
+		</nav>
 	</header>
-
-	<nav role="navigation" class="top-nav">
-		<ul class="wrap">
-			<li><a href="/work/" id="work" class="h4">Work</a></li>
-			<li><a href="/blog/" id="blog" class="h4">Blog</a></li>
-			<li><a href="/about/" id="about" class="h4">About</a></li>
-		</ul>
-	</nav>
 
 {{ content }}
 
