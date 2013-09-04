@@ -15,7 +15,7 @@
     color: inherit;
   }
   &[href]:hover {
-    color: $link-hover;
+    color: $link-color-hover;
   }
 }
 
@@ -68,17 +68,20 @@ a[data-tooltip] {
 article { // this is the paper!
   header, .content, .entries header {
     background-color: $background-color;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: $vr-unit + rem;
+    padding-right: $vr-unit + rem;
   }
   header {
     @include border-top-radius($radius + px);
     padding-top: $vr-unit + rem;
+    h1 {
+      color: $link-color;
+    }
   }
   .content {
     @include border-bottom-radius($radius + px);
     padding-bottom: $vr-unit + rem;
-    padding-top: 0;
+    padding-top: $vr-unit + rem; // pads the work image
   }
 }
 .blog {
@@ -119,7 +122,7 @@ article { // this is the paper!
   }
   a:hover {
     padding-bottom: 1px;
-    border-bottom: 1px solid $brand-color;
+    border-bottom: 1px solid $base-color;
   }
 }
 

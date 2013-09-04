@@ -3,38 +3,43 @@
 // - color variables and functions only (no styles)
 // --------------------------------------------------------------- //
 
-$brand-color:      #343640; // should be blue
-$secondary-color:  #EF5A5A; // red (links)
-$text-color:       #585B69; // #333;
-$background-color: #F4F4F6; // should be white-ish
+// BASE - dark blue
+$base-color: #343640;
+	$base-color-light:   lighten( $base-color, 10% );
+	// $base-color-lighter: lighten( $base-color, 20% );
+	// $base-color-dark:     darken( $base-color, 10% );
+	// $base-color-darker:   darken( $base-color, 20% );
 
-// BRAND
-$brand-color-light:   lighten( $brand-color, 10% );
-$brand-color-lighter: lighten( $brand-color, 20% );
-$brand-color-dark:    darken( $brand-color, 10% ); // hover
-$brand-color-darker:  darken( $brand-color, 20% );
+// BACKGROUND - whiteish
+$background-color: lighten( $base-color, 75% );
+	// $background-color-light:   lighten( $background-color, 10% );
+	// $background-color-lighter: lighten( $background-color, 70% );
+	$background-color-dark:      darken( $background-color, 5% ); // border stroke, <hr>, <pre>, <code>
+	// $background-color-darker:   darken( $background-color, 40% );
 
-// SECONDARY
-$secondary-color-light:   lighten( $secondary-color, 10% );
-$secondary-color-lighter: lighten( $secondary-color, 20% );
-$secondary-color-dark:    darken( $secondary-color, 10% ); // hover
-$secondary-color-darker:  darken( $secondary-color, 20% );
+// BRAND - red
+$brand-color: #EF5A5A;
+	// $brand-color-light:   lighten( $brand-color, 10% );
+	// $brand-color-lighter: lighten( $brand-color, 20% );
+	// $brand-color-dark:     darken( $brand-color, 10% ); // hover
+	// $brand-color-darker:   darken( $brand-color, 20% );
 
-// TEXT
-$text-color-light:   lighten( $text-color, 15% );
-$text-color-lighter: lighten( $text-color, 50% ); // work icons
-$text-color-dark:    darken( $text-color, 10% );
-$text-color-darker:  darken( $text-color, 40% );
+// TEXT - blue
+$text-color: lighten( $base-color, 10% ); // play with this - border vs page
+	$text-color-light:   lighten( $text-color, 15% );
+	$text-color-lighter: lighten( $text-color, 50% ); // work icons
+	// $text-color-dark:     darken( $text-color, 10% );
+	// $text-color-darker:   darken( $text-color, 40% );
 
-// BACKGROUND
-$background-color-light:   lighten( $text-color, 10% );
-$background-color-lighter: lighten( $text-color, 20% );
-$background-color-dark:    darken( $text-color, 10% ); // #eaeaea; // #ddd // border stroke, <hr>, <pre>, <code>
-$background-color-darker:  darken( $text-color, 40% );
+	$text-color-header:                $text-color;
+	$text-color-secondary:             lighten( $text-color, 20% ); // top nav
+	$text-color-secondary-hover:       $text-color;
 
-// LINKS //
-$link:             $secondary-color;
-$link-hover:       $secondary-color-dark;
+// LINK - red
+$link-color: $brand-color;
+	$link-color-hover:  $link-color;
+	$link-color-active: $link-color;
+
 
 // test out saturate / desaturate, adjust-hue, alpha, and tint / shade
 // http://robots.thoughtbot.com/post/12974565313/controlling-color-with-sass-color-functions

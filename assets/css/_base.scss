@@ -14,7 +14,7 @@ body {
   padding: 0;
   margin: 0;
   min-width: 320px;
-  background-color: $brand-color;
+  background-color: $base-color;
 }
 header {
   margin: 0;
@@ -54,7 +54,7 @@ address {
 hr {
   @include vr-margins($line-width);
   height: $line-width +px;
-  background-color: #ddd;
+  background-color: #ddd; /////////////////////////////////////////////////////////////////
   color: #ddd; // for IE
   border: 0;
 }

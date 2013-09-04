@@ -27,10 +27,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-weight: 700;
   text-transform: uppercase;
   text-align: left;
-  color: $text-color;
+  color: $text-color-header;
 }
 h1, .h1 {
-  @include font-size(36, 2);
+  @include font-size(36, 1.5);
   font-weight: 400;
 }
 h2, .h2 {
@@ -53,11 +53,11 @@ h6, .h6 {
 
 // LINKS
 a {
-  color: $link;
+  color: $link-color;
   text-decoration: none;
 }
 a:hover, a:hover .icon {
-  color: $link-hover;
+  color: $link-color-hover;
 }
 
 // GENERAL
@@ -68,6 +68,6 @@ code {
 pre { // should contain code tags
   @include font-size($fixed-font-size);
   font-family: $fixed-font-family;
-  color: $text-color-light;
+  color: $text-color; // $text-color-light
 }
 
