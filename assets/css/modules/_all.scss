@@ -81,7 +81,7 @@ article { // this is the paper!
   .content {
     @include border-bottom-radius($radius + px);
     padding-bottom: $vr-unit + rem;
-    padding-top: $vr-unit + rem; // pads the work image
+    // padding-top: $vr-unit + rem; // pads the work image
   }
 }
 .blog {
@@ -97,6 +97,11 @@ article { // this is the paper!
     padding-top: 0;
   }
 }
+.work {
+  .content {
+    padding-top: $vr-unit + rem;
+  }
+}
 
 // ENTRIES - (work archive, blog archive)
 .entries {
@@ -110,7 +115,6 @@ article { // this is the paper!
 
 // CONTENT - (home, about, work entry, blog entry)
 .content {
-  padding-top: $vr-unit + rem;
   ul, ol {
     padding-left: 25px;
   }
