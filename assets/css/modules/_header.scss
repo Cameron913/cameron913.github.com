@@ -84,7 +84,9 @@
     color: $text-color-secondary;
       // background-color: purple;
   }
-  li:hover a {}
+  li:hover a {
+    color: $link-color-hover;
+  }
 }
 
 // .work #work, .blog #blog, .about #about { // highlight current nav section
