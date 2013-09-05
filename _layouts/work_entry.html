@@ -10,16 +10,16 @@ layout: default
 			{% if page.link %}<a    href="{{ page.link }}"    data-tooltip="Link"    target="_blank" class="icon-link"></a>{% endif %}
 		</h1>
 	</header>
-	{% if page.image %}
+	{% if page.gallery %}
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
-				<div class="swiper-slide">
-					<img src="{{ page.image }}" alt="{{ page.image_alt }}" class="wrap-wide" />
-				</div>
+				{% for slide in page.gallery %}
 
-				<div class="swiper-slide">
-					<img src="{{ page.image }}" alt="{{ page.image_alt }}" class="wrap-wide" />
-				</div>
+					<div class="swiper-slide">
+						<img src="/assets/img/{{ page.path | downcase | replace:'.md','' }}/{{ slide.image }}" alt="{{ slide.alt }}" class="wrap-wide" />
+					</div>
+
+				{% endfor %}
 			</div>
 		</div>
 	{% endif %}

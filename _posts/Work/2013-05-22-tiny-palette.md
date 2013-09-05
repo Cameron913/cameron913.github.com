@@ -1,12 +1,21 @@
 ---
 title: Tiny Palette
-image: /assets/img/work/2013-05-22-tiny-palette.png
-image_alt: screenshot of TinyPalette color tool
 layout: work_entry
 category: work
+
 github: https://github.com/Cameron913/Tiny-Palette
 behance: http://www.behance.net/gallery/Tiny-Palette/10174683
 link:
+
+gallery:
+  - image: 2.png
+    alt: screenshot of TinyPalette color tool
+  - image: 3.png
+  - image: 4.png
+  - image: 5.png
+  - image: 6.png
+  - image: 7.png
+  - image: 8.png
 ---
 Tiny Palette is an itty bitty bookmarklet for keeping a palette of colors in localStorage (per website) for quick reference. You can try it out by clicking <a href="javascript:(function()%7Bdocument.body.appendChild(document.createElement(%27script%27)).src%3D%27http://host.camerongarrett.com/Tiny-Palette/tiny-palette.js%27%3B%7D)()%3B">here</a> (it will appear at the top of your browser window).
 

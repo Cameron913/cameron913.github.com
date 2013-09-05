@@ -64,6 +64,9 @@ task :work, :title do |t, args|
   filename = "#{date}-#{title.gsub(/(\'|\!|\?|\:|\s\z)/,"").gsub(/\s/,"-").downcase}.#{extension}"
   content  = File.read(template)
 
+  # define image directory
+  dirname  = "#{date}-#{title.gsub(/(\'|\!|\?|\:|\s\z)/,"").gsub(/\s/,"-").downcase}"
+
   if File.exists?("_posts/Work/#{filename}")
     raise "The post already exists."
   else
@@ -71,9 +74,13 @@ task :work, :title do |t, args|
     File.write("_posts/Work/#{filename}", parsed_content)
     puts "#{filename} was created."
 
+    # make image directory
+    Dir::mkdir("assets/img/work/#{dirname}") unless File.exists?("assets/img/work/#{dirname}")
+
     if editor && !editor.nil?
       sleep 2
       system "#{editor} _posts/Work/#{filename}"
+      system "open assets/img/work/#{dirname}"
     end
   end
 end
