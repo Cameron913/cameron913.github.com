@@ -13,7 +13,3 @@ gallery:
 
 published: false
 ---
-
-- O show an image on work archive page
-- O slider options
-- O only load slider assets on work and work archive pages
