@@ -9,6 +9,8 @@ window.onload = function() {
     loop: true,
     calculateHeight: true,
     grabCursor: true,
+    keyboardControl: true,
+    autoplay: 5000,
 	    updateOnImagesReady: true,
 	    autoResize: true,
 	    simulateTouch: true

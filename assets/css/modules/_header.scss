@@ -89,15 +89,14 @@
   }
 }
 
-// .work #work, .blog #blog, .about #about { // highlight current nav section
-//   color: $link;
-//   &:after { // highlighted block
-//     display: block;
-//     position: relative;
-//     top: $line-width +px;
-//     content: "";
-//     width: 100%;
-//     height: $line-width +px;
-//     background-color: $link;
-//   }
-// }
+.work #work, .blog #blog, .about #about { // highlight current nav section
+  color: $link-color;
+  &:after { // highlighted block
+    display: block;
+    position: relative;
+    content: "";
+    width: 100%;
+    height: $line-width +px;
+    background-color: $link-color;
+  }
+}

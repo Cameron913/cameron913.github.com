@@ -2,6 +2,7 @@
 // LAYOUTS - ALL
 // --------------------------------------------------------------- //
 
+// WRAPS (yum)
 .wrap, .content { // container wrap
 	width: 95%;
 	width: calc(100% - 20px);
@@ -17,26 +18,64 @@
   max-width: 1024px; // max width full ipad landscape
 }
 
+// ENTRIES - (work-archive, blog-archive)
+.entries {}
+
+// CONTENT - (home, about, work-entry, blog-entry)
+.content {
+  ul, ol {
+    padding-left: 25px;
+  }
+  ul li {
+    list-style: disc;
+  }
+  ol li {
+    list-style: decimal;
+  }
+  a:hover {
+    padding-bottom: 1px;
+    border-bottom: 1px solid $link-color-hover;
+  }
+}
+
+// CONTEXTS
 .home {}
+.about {}
 .work {
-  .entries {}
-  h1 a[class*="icon"] {
+  h1 a[class*="icon"] { // work link icons
     color: $text-color-lighter;
+  }
+  .entries {
+      img {
+        @extend %vr-margins; // deal with vertical-rythm
+      }
+  }
+  .content {
+    padding-top: $vr-unit + rem; // because content is below image slider
   }
 }
 .blog {
   .entries, article {
-    margin-bottom: 0;
     h1 {
-      display: block;
+      display: block; // prevent time on same line
       margin-bottom: 0;
     }
     time {
       color: $text-color-light;
     }
   }
+  .entries {
+    li:not(:first-of-type) header {
+      @include border-top-radius(0);
+    }
+    li:last-of-type header {
+      @include border-bottom-radius($radius + px);
+    }
+  }
+  .content {
+    padding-top: 0;
+  }
 }
-.about {}
 
 /* MEDIA QUERIES */
 @media only screen and (min-width : 550px) {

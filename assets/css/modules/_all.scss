@@ -53,7 +53,7 @@ a[data-tooltip] {
       text-align: center;
       font-family: $header-font-family;
       font-weight: 700;
-      background-color: $background-color-dark;
+      background-color: $card-color-dark;
       color: $text-color-lighter;
       padding: 0 10px;
       width: 80px;
@@ -63,71 +63,23 @@ a[data-tooltip] {
   }
 }
 
-
-// ARTICLE
-article { // this is the paper!
+// ARTICLE - Card!
+article {
   header, .content, .entries header {
-    background-color: $background-color;
+    background-color: $card-color;
     padding-left: $vr-unit + rem;
     padding-right: $vr-unit + rem;
   }
   header {
-    @include border-top-radius($radius + px);
+    @include border-top-radius($radius + px); // top of card
     padding-top: $vr-unit + rem;
     h1 {
       color: $link-color;
     }
   }
   .content {
-    @include border-bottom-radius($radius + px);
-    padding-bottom: $vr-unit + rem;
-    // padding-top: $vr-unit + rem; // pads the work image
-  }
-}
-.blog {
-  .entries {
-    li:not(:first-of-type) header {
-      @include border-top-radius(0);
-    }
-    li:last-of-type header {
-      @include border-bottom-radius($radius + px);
-    }
-  }
-  .content {
-    padding-top: 0;
-  }
-}
-.work {
-  .entries {}
-  .content {
-    padding-top: $vr-unit + rem;
-  }
-}
-
-// ENTRIES - (work archive, blog archive)
-.entries {
-  // background-color: $background-color;
-  li {}
-  h1 {}
-	img {
-    @extend %vr-margins; // deal with vertical-rythm
-	}
-}
-
-// CONTENT - (home, about, work entry, blog entry)
-.content {
-  ul, ol {
-    padding-left: 25px;
-  }
-  ul li {
-    list-style: disc; // or circle
-  }
-  ol li {
-    list-style: decimal;
-  }
-  a:hover {
-    padding-bottom: 1px;
-    border-bottom: 1px solid $link-color-hover;
+    @include border-bottom-radius($radius + px); // bottom of card
+    padding-bottom: $vr-unit + rem; // pads the work image
   }
 }
 
@@ -147,7 +99,5 @@ article { // this is the paper!
 
 // PAGE FOOTER
 body > footer {
-  .h4 {
-    display: block;
-  }
+  color: $text-color-secondary;
 }

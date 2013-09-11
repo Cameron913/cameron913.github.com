@@ -10,12 +10,12 @@ $base-color: #343640;
 	// $base-color-dark:     darken( $base-color, 10% );
 	// $base-color-darker:   darken( $base-color, 20% );
 
-// BACKGROUND - whiteish
-$background-color: lighten( $base-color, 75% );
-	// $background-color-light:   lighten( $background-color, 10% );
-	// $background-color-lighter: lighten( $background-color, 70% );
-	$background-color-dark:      darken( $background-color, 5% ); // border stroke, <hr>, <pre>, <code>
-	// $background-color-darker:   darken( $background-color, 40% );
+// CARD - whiteish
+$card-color: lighten( $base-color, 75% );
+	// $card-light:   lighten( $card-color, 10% );
+	// $card-lighter: lighten( $card-color, 70% );
+	$card-color-dark:      darken( $card-color, 5% ); // border stroke, <hr>, <pre>, <code>
+	// $card-color-darker:   darken( $card-color, 40% );
 
 // BRAND - red
 $brand-color: #EF5A5A;

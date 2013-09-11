@@ -8,14 +8,18 @@ behance: http://www.behance.net/gallery/Tiny-Palette/10174683
 link:
 
 gallery:
+  - image: 1.png
+    alt: TinyPalette color tool
   - image: 2.png
-    alt: screenshot of TinyPalette color tool
+    alt: select the hex code
   - image: 3.png
+    alt: close a swatch
   - image: 4.png
+    alt: move and rearrange swatches
   - image: 5.png
+    alt: add a new swatch
   - image: 6.png
-  - image: 7.png
-  - image: 8.png
+    alt: move the palette around
 ---
 Tiny Palette is an itty bitty bookmarklet for keeping a palette of colors in localStorage (per website) for quick reference. You can try it out by clicking <a href="javascript:(function()%7Bdocument.body.appendChild(document.createElement(%27script%27)).src%3D%27http://host.camerongarrett.com/Tiny-Palette/tiny-palette.js%27%3B%7D)()%3B">here</a> (it will appear at the top of your browser window).
 

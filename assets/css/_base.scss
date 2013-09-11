@@ -80,7 +80,7 @@ sub {
 code {
   border-radius: $radius +px;
   padding: 4px 8px;
-  background-color: $background-color-dark;
+  background-color: $card-color-dark;
 }
 pre {
   @extend %vr-margins;
@@ -88,7 +88,7 @@ pre {
   border-radius: $radius +px;
   padding-left: $vr-unit +rem;
   padding-right: $vr-unit +rem;
-  background-color: $background-color-dark;
+  background-color: $card-color-dark;
   code {
     padding: 0;
   }
