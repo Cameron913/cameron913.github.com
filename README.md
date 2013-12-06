@@ -31,6 +31,7 @@
 - Gists - vertical rythm, style like <code>, and <pre>
 - prevent <pre> wrapping (add horizontal scroll, symmetric resize)
 - [favicons](https://github.com/audreyr/favicon-cheat-sheet)
+- [singlepage-jekyll](https://github.com/JCB-K/singlepage-jekyll) + add json to gemfile
 
 # IDEAS
 - optimize PNGs with rake["work post"] w/ imageoptim or PNGout
