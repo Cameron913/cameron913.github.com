@@ -35,6 +35,7 @@
 - [singlepage-jekyll](https://github.com/JCB-K/singlepage-jekyll) + add json to gemfile
 - use ALIAS DNS record for [GitHub CDN](https://github.com/blog/1715-faster-more-awesome-github-pages)
 - animate favicon with [Tinycon](https://github.com/tommoor/tinycon)
+- take tinypalette off rawgithub
 
 # IDEAS
 - optimize PNGs with rake["work post"] w/ imageoptim or PNGout
