@@ -22,16 +22,19 @@
 - add 404 page
 - remove /assets/css/style.css from sitemap
 - [transition: in-out](http://roybarber.com/)
-- host images off github (move in publish rake task)
+- host images off github (move in publish rake task) use a CDN
 - fine-tune icon font - http://fontello.com/ (maybe - http://www.entypo.com/characters/)
 - [post search with autofill](http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/introducing-the-html5-datalist-element/ - http://jqueryui.com/autocomplete/)
 - [retina images with srcset](http://mobile.smashingmagazine.com/2013/08/21/webkit-implements-srcset-and-why-its-a-good-thing/)
 - [use multicol to split links in footer](http://www.w3.org/TR/css3-multicol/)
-- Jekyll syntax highlighting
+- Jekyll syntax highlighting highlight.js
 - Gists - vertical rythm, style like <code>, and <pre>
 - prevent <pre> wrapping (add horizontal scroll, symmetric resize)
+- [style everything](http://roundedbygravity.com/example/)
 - [favicons](https://github.com/audreyr/favicon-cheat-sheet)
 - [singlepage-jekyll](https://github.com/JCB-K/singlepage-jekyll) + add json to gemfile
+- use ALIAS DNS record for [GitHub CDN](https://github.com/blog/1715-faster-more-awesome-github-pages)
+- animate favicon with [Tinycon](https://github.com/tommoor/tinycon)
 
 # IDEAS
 - optimize PNGs with rake["work post"] w/ imageoptim or PNGout

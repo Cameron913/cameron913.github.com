@@ -7,16 +7,14 @@
 require 'rake'
 require 'yaml'
 require 'fileutils'
-
 # others
 require 'guard'
 
 # Load the configuration file
 config = YAML.load_file("_config.yml")
 
-# Set "rake post" as default task
+# Set "deploy" as default task
 task :default => :deploy
-
 
 # rake blog["Post Title"]
 desc "Create a post in _posts/Blog"
@@ -24,7 +22,6 @@ task :blog, :title do |t, args|
   title     = args[:title]
   template  = config["blog"]["template"]
   extension = config["blog"]["extension"]
-  editor    = config["editor"]
 
   if title.nil? or title.empty?
     raise "Please add a title to your post."
@@ -41,10 +38,8 @@ task :blog, :title do |t, args|
     File.write("_posts/Blog/#{filename}", parsed_content)
     puts "#{filename} was created."
 
-    if editor && !editor.nil?
-      sleep 2
-      system "#{editor} _posts/Blog/#{filename}"
-    end
+    sleep 2
+    system "open _posts/Blog/#{filename}"
   end
 end
 
@@ -54,7 +49,6 @@ task :work, :title do |t, args|
   title     = args[:title]
   template  = config["work"]["template"]
   extension = config["work"]["extension"]
-  editor    = config["editor"]
 
   if title.nil? or title.empty?
     raise "Please add a title to your post."
@@ -77,11 +71,9 @@ task :work, :title do |t, args|
     # make image directory
     Dir::mkdir("assets/img/work/#{dirname}") unless File.exists?("assets/img/work/#{dirname}")
 
-    if editor && !editor.nil?
-      sleep 2
-      system "#{editor} _posts/Work/#{filename}"
-      system "open assets/img/work/#{dirname}"
-    end
+    sleep 2
+    system "open _posts/Work/#{filename}"
+    system "open assets/img/work/#{dirname}"
   end
 end
 

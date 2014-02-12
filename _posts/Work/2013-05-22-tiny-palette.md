@@ -21,7 +21,7 @@ gallery:
   - image: 6.png
     alt: move the palette around
 ---
-Tiny Palette is an itty bitty bookmarklet for keeping a palette of colors in localStorage (per website) for quick reference. You can try it out by clicking <a href="javascript:(function()%7Bdocument.body.appendChild(document.createElement(%27script%27)).src%3D%27http://host.camerongarrett.com/Tiny-Palette/tiny-palette.js%27%3B%7D)()%3B">here</a> (it will appear at the top of your browser window).
+Tiny Palette is an itty bitty bookmarklet for keeping a palette of colors in localStorage (per website) for quick reference. You can try it out by clicking <a href="javascript:(function()%7Bdocument.body.appendChild(document.createElement(%27script%27)).src%3D%27http://rawgithub.com/Cameron913/Tiny-Palette/master/tiny-palette.js%27%3B%7D)()%3B">here</a> (it will appear at the top of your browser window).
 
 1. Click the plus sign to add a color by hex code.
 2. Drag the widget around your page by the textured bar.

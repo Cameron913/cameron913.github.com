@@ -10,4 +10,8 @@ blog:
 work:
   template:      _templates/work.txt
   extension:     md
-editor:          subl
+
+# Site Map - the exclude is not working
+# https://github.com/danielgroves/jekyll-plugins
+sitemap:
+    exclude: "/assets/css/style.css"
