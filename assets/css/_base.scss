@@ -3,6 +3,18 @@
 // - build on 'normalize' with basic global styling
 // --------------------------------------------------------------- //
 
+// TYPEKIT LOADING
+.wf-loading {
+  // visibility: hidden;
+  opacity: 0;
+}
+.wf-active {
+  // visibility: visibility;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+.wf-inactive {}
+
 // GENERAL
 * {
   -moz-box-sizing:    border-box;
