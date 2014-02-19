@@ -11,7 +11,7 @@
 .wf-active {
   // visibility: visibility;
   opacity: 1;
-  transition: opacity 1s ease;
+  transition: opacity 1s ease; // MAKE THIS NOT FADE IN EVERY TIME, ASYNC PAGE CONTENT
 }
 .wf-inactive {}
 
