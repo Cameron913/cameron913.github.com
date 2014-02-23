@@ -77,7 +77,7 @@ task :work, :title do |t, args|
   end
 end
 
-# Deploy _site to GitHub Pages (via /deploy)
+# Deploy _site to GitHub Pages (via /_deploy)
 # http://winstonyw.com/2013/02/24/jekyll_haml_sass_and_github_pages/
 desc "Deploy"
 task :deploy do
@@ -95,7 +95,7 @@ task :deploy do
     system "git add ."
     system "git add -u"
 
-    puts "## Commiting: Site updated at #{Time.now.utc}"
+    puts "## Committing: Site updated at #{Time.now.utc}"
     message = "Site updated at #{Time.now.utc}"
     system "git commit -m \"#{message}\""
 

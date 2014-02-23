@@ -8,7 +8,6 @@
 
 # SECONDARY RESOURCES
 - [Google rich snippets](https://support.google.com/webmasters/answer/99170?hl=en)
-- [Cloudflare](http://www.cloudflare.com/)
 - [present.js](com/mbostock/d3/blob/gh-pages/talk/20111116/present/present.js)
   - [example](http://mbostock.github.io/d3/talk/20111116/#1)
 - [paper.js](http://paperjs.org/examples/future-splash/)
