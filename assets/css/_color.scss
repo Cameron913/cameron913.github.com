@@ -3,15 +3,15 @@
 // - color variables and functions only (no styles)
 // --------------------------------------------------------------- //
 
-// BASE - dark blue
-$base-color: #343640;
-	$base-color-light:   lighten( $base-color, 10% );
-	// $base-color-lighter: lighten( $base-color, 20% );
+// BASE
+$base-color: #F9F9F9;
+	$base-color-light:   lighten( $base-color, 1% );
+	$base-color-lighter: lighten( $base-color, 5% );
 	// $base-color-dark:     darken( $base-color, 10% );
 	// $base-color-darker:   darken( $base-color, 20% );
 
-// CARD - whiteish
-$card-color: lighten( $base-color, 75% );
+// CARD
+$card-color: $base-color-light;
 	// $card-light:   lighten( $card-color, 10% );
 	// $card-lighter: lighten( $card-color, 70% );
 	$card-color-dark:      darken( $card-color, 5% ); // border stroke, <hr>, <pre>, <code>
@@ -25,7 +25,7 @@ $brand-color: #EF5A5A;
 	// $brand-color-darker:   darken( $brand-color, 20% );
 
 // TEXT - blue
-$text-color: lighten( $base-color, 10% ); // play with this - border vs page
+$text-color: darken( $base-color, 60% ); // play with this - border vs page
 	$text-color-light:   lighten( $text-color, 15% );
 	$text-color-lighter: lighten( $text-color, 50% ); // work icons
 	// $text-color-dark:     darken( $text-color, 10% );
@@ -37,8 +37,8 @@ $text-color: lighten( $base-color, 10% ); // play with this - border vs page
 
 // LINK - red
 $link-color: $brand-color;
-	$link-color-hover:  $link-color;
-	$link-color-active: $link-color;
+$link-color-hover:  $brand-color;
+$link-color-active: $brand-color;
 
 
 // test out saturate / desaturate, adjust-hue, alpha, and tint / shade
