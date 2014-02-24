@@ -13,7 +13,7 @@
     position: absolute;
     font-size: 34px;
     margin: 0;
-    box-shadow: inset 0 0 0 $line-width + px $base-color-light;
+    box-shadow: inset 0 0 0 $line-width + px $card-color;
     background-color: $base-color;
     width: 82px;
     height: 46px;
@@ -30,7 +30,7 @@
     right: 9px;
     top: 1px;
     line-height: 0px;
-    color: $base-color-light;
+    color: $card-color;
   }
   h1:hover { // animated
     width: 100%;
@@ -43,7 +43,7 @@
     width: 100%;
     white-space: nowrap;
     font-weight: 500;
-    color: $text-color;
+    color: $card-color;
     vertical-align: text-bottom;
     overflow: hidden;
     transition: color 0.2s;

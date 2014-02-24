@@ -92,7 +92,7 @@ sub {
 code {
   border-radius: $radius +px;
   padding: 4px 8px;
-  background-color: $card-color-dark;
+  background-color: $base-color;
 }
 pre {
   @extend %vr-margins;
@@ -100,7 +100,7 @@ pre {
   border-radius: $radius +px;
   padding-left: $vr-unit +rem;
   padding-right: $vr-unit +rem;
-  background-color: $card-color-dark;
+  background-color: $base-color;
   code {
     padding: 0;
   }

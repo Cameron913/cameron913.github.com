@@ -4,36 +4,22 @@
 // --------------------------------------------------------------- //
 
 // BASE
-$base-color: #F9F9F9;
-	$base-color-light:   lighten( $base-color, 1% );
-	$base-color-lighter: lighten( $base-color, 5% );
-	// $base-color-dark:     darken( $base-color, 10% );
-	// $base-color-darker:   darken( $base-color, 20% );
+$base-color: #F6F6F6; // bkg, border stroke, <hr>, <pre>, <code>
 
 // CARD
-$card-color: $base-color-light;
-	// $card-light:   lighten( $card-color, 10% );
-	// $card-lighter: lighten( $card-color, 70% );
-	$card-color-dark:      darken( $card-color, 5% ); // border stroke, <hr>, <pre>, <code>
-	// $card-color-darker:   darken( $card-color, 40% );
+$card-color: lighten( $base-color, 5% );
 
 // BRAND - red
 $brand-color: #EF5A5A;
-	// $brand-color-light:   lighten( $brand-color, 10% );
-	// $brand-color-lighter: lighten( $brand-color, 20% );
-	// $brand-color-dark:     darken( $brand-color, 10% ); // hover
-	// $brand-color-darker:   darken( $brand-color, 20% );
 
-// TEXT - blue
+// TEXT
 $text-color: darken( $base-color, 60% ); // play with this - border vs page
 	$text-color-light:   lighten( $text-color, 15% );
 	$text-color-lighter: lighten( $text-color, 50% ); // work icons
-	// $text-color-dark:     darken( $text-color, 10% );
-	// $text-color-darker:   darken( $text-color, 40% );
 
-	$text-color-header:                $text-color;
-	$text-color-secondary:             lighten( $text-color, 20% ); // top nav
-	$text-color-secondary-hover:       $text-color;
+	$text-color-header:          $text-color;
+	$text-color-secondary:       lighten( $text-color, 20% ); // top nav
+	$text-color-secondary-hover: $text-color;
 
 // LINK - red
 $link-color: $brand-color;

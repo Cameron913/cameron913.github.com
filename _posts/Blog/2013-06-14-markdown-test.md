@@ -2,7 +2,7 @@
 title: Here Is A Test Of Markdown Styling
 layout: blog_entry
 category: blog
-published: false
+published: true
 ---
 
 # Test display of HTML elements and here is some more heading for us to play with and such and such
