@@ -3,8 +3,35 @@
 // - all breakpoints should live here
 // --------------------------------------------------------------- //
 
-@media only screen
-and (min-width : 480px) {
-	// width: 95%;
-	// width: calc(100% - 20px);
+/* MEDIA QUERIES */
+@media only screen and (min-width : 650px) { // 650px  $max-width
+
+	body > footer section {
+	  width: 50%;
+	  float: left;
+	  .h4 {
+	    display: inline-block;
+	  }
+	}
+
+  // .content {
+  //   ul, ol {
+  //     padding-left: 0px;
+  //   }
+  // }
+  // destroy paper side margins when small, add padding for text when large
+
+  // progressively add padding and width to card (smaller side padding on very small)
+  // let pre and gist flow full (no margins) on mobile, add margins on desktop
+  // remove header side padding
+
+  header { @include border-top-radius($radius + px); } // top of card
+  .content { @include border-bottom-radius($radius + px); } // bottom of card
+
+  .logo { padding-left: 0px; }
+  .logo ul { right: 0px; }
 }
+
+
+// @media only screen and (min-width : 480px) { // iPhone portrait
+// }

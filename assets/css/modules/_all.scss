@@ -71,14 +71,14 @@ article {
     padding-right: $vr-unit + rem;
   }
   header {
-    @include border-top-radius($radius + px); // top of card
+    // @include border-top-radius($radius + px); // top of card // IN BREAKPOINT
     padding-top: $vr-unit + rem;
     h1 {
       color: $link-color;
     }
   }
   .content {
-    @include border-bottom-radius($radius + px); // bottom of card
+    // @include border-bottom-radius($radius + px); // bottom of card // IN BREAKPOINT
     padding-bottom: $vr-unit + rem; // pads the work image
   }
 }

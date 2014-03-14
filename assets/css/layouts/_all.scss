@@ -75,22 +75,3 @@
     padding-top: 0;
   }
 }
-
-/* MEDIA QUERIES */
-@media only screen and (min-width : 550px) {
-  body > footer section {
-    width: 50%;
-    float: left;
-    .h4 {
-      display: inline-block;
-    }
-  }
-}
-@media only screen and (min-width : 680px) {
-  // .content {
-  //   ul, ol {
-  //     padding-left: 0px;
-  //   }
-  // }
-  // destroy paper side margins when small, add padding for text when large
-}

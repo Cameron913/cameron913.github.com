@@ -97,10 +97,10 @@
   font-weight: 700    !important;
   position: relative;
   // text-transform: uppercase;
-  padding-top: $vr-unit +rem;
+  padding-top: $vr-unit +rem; // included manually
   @include vr-margins;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: $vr-unit + rem; // CHANGE THIS FOR BREAKPOINT & Transition
+  // padding-right: 10px;
 
   h1 {
     display: block;
@@ -121,8 +121,7 @@
     background-color: $base-color;
     position: absolute;
     right: 0px;
-    padding-left: 5px;
-      // padding-right: 10px
+    padding-left: 5px; // CHANGE THIS FOR BREAKPOINT & Transition ?
   }
   h1:hover {
     width: 100%;
@@ -132,7 +131,7 @@
   ul {
     position: absolute;
     top: $vr-unit +rem;
-    right: 10px; // CHANGE THIS FOR BREAKPOINT
+    right: $vr-unit + rem; // CHANGE THIS FOR BREAKPOINT & Transition
     margin: 0;
     padding: 0;
     list-style: none;
