@@ -10,7 +10,7 @@ $base-color: #F6F6F6; // bkg, border stroke, <hr>, <pre>, <code>
 $card-color: lighten( $base-color, 5% );
 
 // BRAND - red
-$brand-color: #EF5A5A;
+$brand-color: #55ACEE;
 
 // TEXT
 $text-color: darken( $base-color, 60% ); // play with this - border vs page
@@ -25,7 +25,3 @@ $text-color: darken( $base-color, 60% ); // play with this - border vs page
 $link-color: $brand-color;
 $link-color-hover:  $brand-color;
 $link-color-active: $brand-color;
-
-
-// test out saturate / desaturate, adjust-hue, alpha, and tint / shade
-// http://robots.thoughtbot.com/post/12974565313/controlling-color-with-sass-color-functions

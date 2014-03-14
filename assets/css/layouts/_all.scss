@@ -4,8 +4,7 @@
 
 // WRAPS (yum)
 .wrap, .content { // container wrap
-	width: 95%;
-	width: calc(100% - 20px);
+	width: 100%;
 	min-width: 300px; // 320 (iphone portrait width) - 10 per side
 	max-width: $max-width + px;
 	margin-left: auto;
@@ -55,7 +54,7 @@
   }
 }
 .blog {
-  .entries, article {
+  .entries, article header {
     h1 {
       display: block; // prevent time on same line
       margin-bottom: 0;

@@ -66,8 +66,8 @@ address {
 hr {
   @include vr-margins($line-width);
   height: $line-width +px;
-  background-color: #ddd; /////////////////////////////////////////////////////////////////
-  color: #ddd; // for IE
+  background-color: $base-color;
+  color: $base-color; // for IE
   border: 0;
 }
 footer {
