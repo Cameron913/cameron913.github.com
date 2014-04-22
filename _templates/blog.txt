@@ -1,6 +1,0 @@
----
-title:
-layout: blog_entry
-category: blog
-published: false
----
