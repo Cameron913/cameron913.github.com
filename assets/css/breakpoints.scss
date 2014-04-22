@@ -6,6 +6,7 @@
 /* MEDIA QUERIES */
 @media only screen and (min-width : 650px) { // 650px  $max-width
 
+  // two column footer
 	body > footer section {
 	  width: 50%;
 	  float: left;
@@ -25,10 +26,12 @@
   // let pre and gist flow full (no margins) on mobile, add margins on desktop
   // remove header side padding
 
-  header { @include border-top-radius($radius + px); } // top of card
+  // add card border radius
+  header   { @include border-top-radius(   $radius + px); } // top of card
   .content { @include border-bottom-radius($radius + px); } // bottom of card
 
-  .logo { padding-left: 0px; }
+  // unpad the header
+  .logo    { padding-left: 0px; }
   .logo ul { right: 0px; }
 }
 
