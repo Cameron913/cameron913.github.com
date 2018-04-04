@@ -3,14 +3,15 @@ body {
   color: black;
   font-family:'Sabon Next W01';
   font-size: 18px;
-  font-weight: 100;
-  font-style: normal;
+  font-weight: 400;
   margin: 0;
 }
 
 h1 {
   font-size: 1.8em;
-  font-weight: 100;
+  font-weight: 400;
+  font-style: italic;
+  /*letter-spacing: .005em;*/
 }
 p {}
 a {}
@@ -18,7 +19,8 @@ a {}
 .container {
   margin: 0 auto;
   padding: 6em 1em;
-  max-width: 800px;
+  width: 80%;
+  /*max-width: 800px;*/
   min-width: 320px;
 }
 
@@ -26,7 +28,8 @@ a {}
   /*font-size: 6em;*/
   font-size: 7rem;
   font-family: "Sabon Next W01 Display";
-  letter-spacing: -.005em;
+  font-weight: 300;
+  /*letter-spacing: -.005em;*/
   /*margin: 0.8em 0;*/
   margin: 4rem 0;
 }
@@ -39,7 +42,7 @@ a {}
   transition: all 200ms ease;
 }
 .fooda:hover {
-  color: white;
+  /*color: white;*/
 }
 .fooda:active {}
 
@@ -57,18 +60,16 @@ a {}
   transition: all 200ms ease;
 }
 .fooda:hover::after {
-  height: 85%;
-  top: 5%;
+  /*height: 85%;*/
+  /*top: 5%;*/
 }
 
 
 .email {
-  font-size: 6em;
+  font-size: 6rem;
   position: relative;
   display: inline-block;
   margin: 0;
-}
-.email a {
   text-decoration: none;
 }
 
