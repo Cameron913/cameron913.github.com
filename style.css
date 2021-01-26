@@ -51,13 +51,13 @@ a {}
   left: 10px;
   transform-origin: top right;
   transform: translateX(-100%) rotate(-90deg);
-  position: absolute;
+  position: fixed;
   padding: 0 0.4em;
 }
 .corner-tr {
   top: 10px;
   right: 10px;
-  position: absolute;
+  position: fixed;
   padding: 0 0.4em;
 }
 .corner-br {
@@ -65,14 +65,14 @@ a {}
   right: 10px;
   transform-origin: bottom right;
   transform: rotate(90deg) translateY(100%);
-  position: absolute;
+  position: fixed;
   padding: 0 0.4em;
 }
 .corner-bl {
   bottom: 10px;
   left: 10px;
   transform: rotate(180deg);
-  position: absolute;
+  position: fixed;
   padding: 0 0.4em;
 }
 
