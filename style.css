@@ -15,12 +15,19 @@ html {
 body {
   background-color: white;
   color: black;
-  font-family:'Sabon Next W01';
+  font-family:'Sabon Next W01', Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   font-weight: 400;
   margin: 0;
   /*border: 10px solid black;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
 }
 
+
+/* get rid of this */
+/* ----------------- */
 h1 {
   font-size: 1.4rem;
   font-weight: 400;
@@ -29,10 +36,42 @@ h1 {
 }
 p {}
 a {}
+/* ---------------- */
+
+
+.page-corners {
+  position: absolute;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  font-weight: 400;
+  color: #999;
+  padding: 0 0.4em;
+}
+.corner-tl {
+  top: 10px;
+  left: 10px;
+  transform-origin: top right;
+  transform: translateX(-100%) rotate(-90deg);
+}
+.corner-tr {
+  top: 10px;
+  right: 10px;
+}
+.corner-br {
+  bottom: 10px;
+  right: 10px;
+  transform-origin: bottom right;
+  transform: rotate(90deg) translateY(100%)
+}
+.corner-bl {
+  bottom: 10px;
+  left: 10px;
+  transform: rotate(180deg);
+}
+
 
 .container {
   margin: 0 auto;
-  padding: 6em 1em;
+  padding: 1em;
   width: 80%;
   /*max-width: 800px;*/
   /*min-width: 320px;*/
@@ -45,7 +84,7 @@ a {}
   font-weight: 300;
   /*letter-spacing: -.005em;*/
   /*margin: 0.8em 0;*/
-  margin: 4rem 0;
+  margin: 0 0 0.5em;
 }
 
 .company {
@@ -79,6 +118,10 @@ a {}
   z-index: 1;
 }
 
+
+.icon {
+  margin: 0;
+}
 
 .email {
   font-size: 5rem;
