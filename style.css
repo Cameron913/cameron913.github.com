@@ -116,7 +116,7 @@ a {}
   position: absolute;
   display: block;
   content: "";
-  background-color: #6ecf97;
+  background-color: #7B28AF;
   z-index: -1;
   transition: all 200ms ease;
 }
